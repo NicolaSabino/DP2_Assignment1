@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="rnsInfo.xsd">
+  
+  <vehicle entryTime="2001-12-31T12:00:00" from="001" id="CA370TT" position="000" state="PARKED" to="002" type="CAR"/>
+  
+  <place capacity="1" id="000">
+    <parkingArea>
+    	<service>ser1</service>
+    </parkingArea>
+  </place>
+  
+  <place capacity="1" id="001">
+  	<connectedTo>000</connectedTo>
+  	<roadSegment road="MadamaCristina" name="a1"/>
+  </place>
+  <place capacity="2" id="002">
+  	<connectedTo>000</connectedTo>
+  	<roadSegment road="MadamaCristina" name="a2"/>
+  </place>
+  
+  <place capacity="2" id="003">
+  	<connectedTo>000</connectedTo>
+  	<roadSegment road="Monginevro" name="a1"/>
+  </place>
+  
+  
+</system>

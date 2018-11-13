@@ -3,6 +3,8 @@ package it.polito.dp2.RNS.sol1;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
+import javax.xml.bind.JAXBContext;
+
 import it.polito.dp2.RNS.RnsReader;
 import it.polito.dp2.RNS.RnsReaderException;
 import it.polito.dp2.RNS.RnsReaderFactory;
@@ -20,7 +22,7 @@ public class RnsInfoSerializer {
 		// must be selected using the  `abstract factory` pattern:
 		// we must create the data source by instantiating 
 		// `it.polito.dp2.RNS.RnsReaderFactory` by means of its static method
-		// nreInstance();
+		// `newInstance()`
 		this.factory = RnsReaderFactory.newInstance();
 	}
 
@@ -28,6 +30,7 @@ public class RnsInfoSerializer {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		//instantiate the class
 		RnsInfoSerializer serializer;
 		String filename;
 		
@@ -37,10 +40,22 @@ public class RnsInfoSerializer {
         }
 		
 		serializer = new RnsInfoSerializer();
-		serializer.outputFile(args[0]);
-	}
-
-	public void outputFile(String filename) {
+		
+		try {
+			JAXBContext jc = JAXBContext.newInstance(“it.polito.dp2.RNS.sol1.jaxb”);
+			// create JAXBElement object
+			JAXBElement j= ...;
+			Marshaller m = jc.createMarshaller();
+			m.setProperty( Marshaller.JAXB_FORMATTED_OUTPUT,
+			Boolean.TRUE );
+			m.marshal( j, System.out );
+			} catch( JAXBException je ) {
+			je.printStackTrace();
+			} catch( IOException ioe ) {
+			ioe.printStackTrace();
+			}
 		
 	}
+
+	
 }

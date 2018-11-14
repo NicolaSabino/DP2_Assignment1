@@ -6,7 +6,7 @@
 			<xsd:sequence>
 				<xsd:element name="vehicle" type="vehicleType" maxOccurs="unbounded" minOccurs="0"/>
 				<xsd:element name="place" type="placeType" maxOccurs="unbounded" minOccurs="0">
-					<!-- constraint #1 -->
+					<!-- unique #1 -->
 					<xsd:unique name="serviceUniqueness">
 						<xsd:selector xpath="parkingArea/service"/>
 						<xsd:field xpath="."/>
@@ -25,11 +25,6 @@
 			<xsd:selector xpath="place"/>
 			<xsd:field xpath="@id"/>
 		</xsd:key>
-		<!-- key #3 -->
-		<xsd:keyref name="connectedToRef" refer="placeKey">
-			<xsd:selector xpath="place/connectedTo" />
-			<xsd:field xpath="." />
-		</xsd:keyref>
 		<!-- reference #1 -->
 		<xsd:keyref name="positionRef" refer="placeKey">
 			<xsd:selector xpath="vehicle" />
@@ -45,27 +40,28 @@
 			<xsd:selector xpath="vehicle" />
 			<xsd:field xpath="@to" />
 		</xsd:keyref>
+		<!-- reference #4 -->
 		<xsd:keyref name="connectionFromRef" refer="placeKey">
 			<xsd:selector xpath="connection"/>
 			<xsd:field xpath="@from"/>
 		</xsd:keyref>
+		<!-- reference #5 -->
 		<xsd:keyref name="connectionToRef" refer="placeKey">
 			<xsd:selector xpath="connection"/>
 			<xsd:field xpath="@to"/>
 		</xsd:keyref>
-		
+		<!-- unique #2 -->
 		<xsd:unique name="road_name_uniqueness"> <!-- IT DOES NOT WORK -->
 			<xsd:selector xpath="place/roadSegment"/>
 			<xsd:field xpath="@name"/>
 			<xsd:field xpath="@road"/>
 		</xsd:unique>
-		
+		<!-- unique #3 -->
 		<xsd:unique name="connection_uniqueness">
 			<xsd:selector xpath="connection"/>
 			<xsd:field xpath="@from"/>
 			<xsd:field xpath="@to"/>
 		</xsd:unique>
-		
 	</xsd:element>
 	<!-- TYPE DEFINITIONS -->
 	<xsd:complexType name="connectionType">
@@ -95,7 +91,7 @@
 				<xsd:element name="parkingArea" type="parkingAreaType"/>
 				<xsd:element name="gate" type="gateType"/>
 			</xsd:choice>
-			<xsd:attribute name="capacity" type="xsd:positiveInteger" use="required"/>
+			<xsd:attribute name="capacity" type="xsd:int" use="required"/>
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>

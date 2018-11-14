@@ -15,16 +15,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for roadSegmentType complex type.
+ * <p>Java class for connectionType complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="roadSegmentType">
+ * &lt;complexType name="connectionType">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="road" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="from" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="to" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -33,60 +33,60 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "roadSegmentType")
-public class RoadSegmentType {
+@XmlType(name = "connectionType")
+public class ConnectionType {
 
-    @XmlAttribute(name = "name", required = true)
-    protected String name;
-    @XmlAttribute(name = "road", required = true)
-    protected String road;
+    @XmlAttribute(name = "from", required = true)
+    protected String from;
+    @XmlAttribute(name = "to", required = true)
+    protected String to;
 
     /**
-     * Gets the value of the name property.
+     * Gets the value of the from property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getName() {
-        return name;
+    public String getFrom() {
+        return from;
     }
 
     /**
-     * Sets the value of the name property.
+     * Sets the value of the from property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setName(String value) {
-        this.name = value;
+    public void setFrom(String value) {
+        this.from = value;
     }
 
     /**
-     * Gets the value of the road property.
+     * Gets the value of the to property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getRoad() {
-        return road;
+    public String getTo() {
+        return to;
     }
 
     /**
-     * Sets the value of the road property.
+     * Sets the value of the to property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setRoad(String value) {
-        this.road = value;
+    public void setTo(String value) {
+        this.to = value;
     }
 
 }

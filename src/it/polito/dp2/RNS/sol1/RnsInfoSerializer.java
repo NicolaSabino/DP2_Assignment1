@@ -1,6 +1,13 @@
 package it.polito.dp2.RNS.sol1;
 
+import java.io.File;
 import java.util.Set;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+
+import it.polito.dp2.RNS.ConnectionReader;
 import it.polito.dp2.RNS.GateReader;
 import it.polito.dp2.RNS.RnsReader;
 import it.polito.dp2.RNS.RnsReaderException;
@@ -9,6 +16,9 @@ import it.polito.dp2.RNS.RnsReaderFactory;
 public class RnsInfoSerializer {
 	private RnsReader 			monitor;
 	private RnsReaderFactory	factory;
+	private Marshaller			marshaller;
+	private JAXBContext 		jc;
+	private File				outputfile;
 	//private DateFormat			dateFormat;
 
 	/**
@@ -21,8 +31,11 @@ public class RnsInfoSerializer {
 		// we must create the data source by instantiating 
 		// `it.polito.dp2.RNS.RnsReaderFactory` by means of its static method
 		// `newInstance()`
-		this.factory = RnsReaderFactory.newInstance();
-		this.monitor = factory.newRnsReader();
+		this.factory	= RnsReaderFactory.newInstance();
+		this.monitor	= factory.newRnsReader();
+		this.marshaller = null;
+		this.jc			= null;
+		this.outputfile	= null;
 		//this.dateFormat = new SimpleDateFormat("dd/MM/yyyy hh:mm");
 	}
 
@@ -55,47 +68,20 @@ public class RnsInfoSerializer {
 	}
 	
 	private void createFile(String filename){
-		// Get the list of Gates
-				Set<GateReader> set = monitor.getGates(null);
-				
-				/* Print the header of the table */
-				printHeader('#',"#Information about GATES");
-				printHeader("#Number of Gates: "+set.size());
-				printHeader("#List of Gates:");
-				printHeader("Id"+"\tCapacity"+"\tType",'-');
-				
-				// For each Gate print related data
-				for (GateReader gate: set) {
-					printHeader(gate.getId()+"\t"+gate.getCapacity()+"\t"+gate.getType().name());
-				}
-	}
-	
-	private void printHeader(String header) {
-		System.out.println(header);
-	}
-
-	private void printHeader(String header, char c) {		
-		System.out.println(header);
-		printLine(c);	
-	}
-	
-	private void printHeader(char c, String header) {		
-		printLine(c);	
-		System.out.println(header);
-	}
-	
-	private void printLine(char c) {
-		System.out.println(makeLine(c));
-	}
-	
-	private StringBuffer makeLine(char c) {
-		StringBuffer line = new StringBuffer(132);
-		
-		for (int i = 0; i < 132; ++i) {
-			line.append(c);
+		try {
+			// Create a JAXBContext capable of handling classes generated into
+            // the `it.polito.dp2.RNS.sol1.jaxb` package
+			this.jc = JAXBContext.newInstance( "it.polito.dp2.RNS.sol1.jaxb" );
+			// create a Marshaler
+            this.marshaller = this.jc.createMarshaller();
+		} catch (JAXBException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		return line;
+		this.outputfile = new File(filename);
+		
 	}
+	
 
 	
 }

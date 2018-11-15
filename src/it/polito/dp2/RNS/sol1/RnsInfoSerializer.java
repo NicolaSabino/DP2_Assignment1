@@ -4,14 +4,12 @@ import java.io.File;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Set;
-
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
-
 import it.polito.dp2.RNS.ConnectionReader;
 import it.polito.dp2.RNS.GateReader;
 import it.polito.dp2.RNS.ParkingAreaReader;
@@ -31,8 +29,8 @@ import it.polito.dp2.RNS.sol1.jaxb.VType;
 import it.polito.dp2.RNS.sol1.jaxb.VehicleType;
 
 public class RnsInfoSerializer {
-	private RnsReader 			monitor;
-	private RnsReaderFactory	factory;
+	private RnsReader 			monitor;	// used to access to the interface
+	private RnsReaderFactory	factory;	// factory used to instantiate the interface
 	private Marshaller			marshaller;
 	private JAXBContext 		jc;
 
@@ -83,7 +81,10 @@ public class RnsInfoSerializer {
 	private void createFile(String filename){
 		try {
 			
-			// create an element for marshaling
+			// Create an element for marshaling.
+			// Since the root element in the XSD Schema file
+			// has an anonymous complex type, we can use directly
+			// `RoadNavigationSystem` instead of JAXBElement<RoadNavigationSystem>
 			RoadNavigationSystem system = new RoadNavigationSystem();
 			this.manageConnections(system);
 			this.manageGates(system);
@@ -96,22 +97,19 @@ public class RnsInfoSerializer {
             // the `it.polito.dp2.RNS.sol1.jaxb` package
 			this.jc = JAXBContext.newInstance( "it.polito.dp2.RNS.sol1.jaxb" );
 			
-			// marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-	          //  marshaller.marshal(nfv, new File(outfile));
-			
 			// create a Marshaler and configure it
             this.marshaller = this.jc.createMarshaller();
             this.marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
             
             // marshaling operation
-            //JAXBElement<RoadNavigationSystem> output = 
-            //this.marshaller.marshal(output,this.outputfile);
             this.marshaller.marshal(system, new File(filename));
             this.marshaller.marshal(system, System.out);
 
 		} catch (JAXBException e) {
+			// ERRORCODE #3
 			System.err.println("An error occours while the marshal operation");
 			e.printStackTrace();
+			System.exit(3);
 		}
 		
 	}

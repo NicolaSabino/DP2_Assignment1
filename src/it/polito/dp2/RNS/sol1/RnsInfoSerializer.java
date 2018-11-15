@@ -1,15 +1,11 @@
 package it.polito.dp2.RNS.sol1;
 
 import java.io.File;
-import java.math.BigInteger;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Set;
 
 import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.datatype.DatatypeConfigurationException;
@@ -24,6 +20,7 @@ import it.polito.dp2.RNS.RnsReaderException;
 import it.polito.dp2.RNS.RnsReaderFactory;
 import it.polito.dp2.RNS.RoadSegmentReader;
 import it.polito.dp2.RNS.VehicleReader;
+import it.polito.dp2.RNS.sol1.jaxb.ConnectionType;
 import it.polito.dp2.RNS.sol1.jaxb.GateType;
 import it.polito.dp2.RNS.sol1.jaxb.ParkingAreaType;
 import it.polito.dp2.RNS.sol1.jaxb.PlaceType;
@@ -38,8 +35,6 @@ public class RnsInfoSerializer {
 	private RnsReaderFactory	factory;
 	private Marshaller			marshaller;
 	private JAXBContext 		jc;
-	private File				outputfile;
-	private DateFormat			dateFormat;
 
 	/**
 	 * Constructor
@@ -55,10 +50,6 @@ public class RnsInfoSerializer {
 		this.monitor	= factory.newRnsReader();
 		this.marshaller = null;
 		this.jc			= null;
-		this.outputfile	= null;
-		// An XMLGregorianCalendar has a specific W3C string representation,
-		// we can format a Date with SimpleDateFormat.
-		this.dateFormat = new SimpleDateFormat("dd/MM/yyyy hh:mm");
 	}
 
 	/**
@@ -92,6 +83,7 @@ public class RnsInfoSerializer {
 	private void createFile(String filename){
 		try {
 			
+			// create an element for marshaling
 			RoadNavigationSystem system = new RoadNavigationSystem();
 			this.manageConnections(system);
 			this.manageGates(system);
@@ -102,23 +94,25 @@ public class RnsInfoSerializer {
 			
 			// Create a JAXBContext capable of handling classes generated into
             // the `it.polito.dp2.RNS.sol1.jaxb` package
-				this.jc = JAXBContext.newInstance( "it.polito.dp2.RNS.sol1.jaxb" );
+			this.jc = JAXBContext.newInstance( "it.polito.dp2.RNS.sol1.jaxb" );
+			
+			// marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+	          //  marshaller.marshal(nfv, new File(outfile));
+			
 			// create a Marshaler and configure it
-            //this.marshaller = this.jc.createMarshaller();
-            //this.marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            this.marshaller = this.jc.createMarshaller();
+            this.marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
             
-            // create an element for marshaling
-            //RoadNavigationSystem output = new RoadNavigationSystem();
+            // marshaling operation
             //JAXBElement<RoadNavigationSystem> output = 
             //this.marshaller.marshal(output,this.outputfile);
-            //this.marshaller.marshal(output, System.out);
+            this.marshaller.marshal(system, new File(filename));
+            this.marshaller.marshal(system, System.out);
 
 		} catch (JAXBException e) {
-			// TODO Auto-generated catch block
 			System.err.println("An error occours while the marshal operation");
 			e.printStackTrace();
 		}
-		this.outputfile = new File(filename);
 		
 	}
 
@@ -197,6 +191,19 @@ public class RnsInfoSerializer {
 	}
 
 	private void manageConnections(RoadNavigationSystem system) {
+		// Get the list of connections
+		Set<ConnectionReader> set = monitor.getConnections();
+		// For each connection store related data
+		List<ConnectionType> list = system.getConnection();
+		for (ConnectionReader connection: set) {
+			// create a temporary container
+			ConnectionType temp = new ConnectionType();
+			// fill it
+			temp.setFrom(connection.getFrom().getId());
+			temp.setTo(connection.getTo().getId());
+			// add the temporary container into the list
+			list.add(temp);
+		}
 		return;
 	}
 

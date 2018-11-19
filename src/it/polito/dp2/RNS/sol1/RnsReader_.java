@@ -15,14 +15,14 @@ import it.polito.dp2.RNS.VehicleType;
 
 public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 	
-	private Set<ConnectionReader> connectionsReader;
-	private Set<GateReader> gatesReader;
-	private Set<ParkingAreaReader> parkingAreasReader;
-	private PlaceReader placeReader;
-	private Set<PlaceReader> placesReader;
-	private Set<RoadSegmentReader> roadSegmentsReader;
-	private VehicleReader vehicleReader;
-	private Set<VehicleReader> vehicleReaders;
+	private Set<ConnectionReader_> connectionsReader;
+	private Set<GateReader_> gatesReader;
+	private Set<ParkingAreaReader_> parkingAreasReader;
+	private PlaceReader_ placeReader;
+	private Set<PlaceReader_> placesReader;
+	private Set<RoadSegmentReader_> roadSegmentsReader;
+	private VehicleReader_ vehicleReader;
+	private Set<VehicleReader_> vehicleReaders;
 		
 
 	@Override

@@ -14,6 +14,14 @@ public class RoadSegmentReader_ implements it.polito.dp2.RNS.RoadSegmentReader {
 	private Set<PlaceReader_> nextPlaces;
 	
 	
+	/**
+	 * Constructor
+	 * @param id
+	 * @param capacity
+	 * @param name
+	 * @param roadName
+	 * @param nextPlaces
+	 */
 	public RoadSegmentReader_(String id, int capacity, String name, String roadName,Set<PlaceReader_> nextPlaces) {
 		if(id != null) this.id = id;
 		if(capacity != 0) this.capacity = capacity;
@@ -24,7 +32,6 @@ public class RoadSegmentReader_ implements it.polito.dp2.RNS.RoadSegmentReader {
 	
 	@Override
 	public String getId() {
-		// TODO Auto-generated method stub
 		return this.id;
 	}
 	

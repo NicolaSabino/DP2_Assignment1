@@ -2,7 +2,7 @@ package it.polito.dp2.RNS.sol1;
 
 import java.io.Serializable;
 
-public enum VehicleState implements Serializable, Comparable<VehicleState> {
+public enum VehicleState_ implements Serializable, Comparable<VehicleState_> {
 	PARKED,
     IN_TRANSIT;
 
@@ -10,7 +10,7 @@ public enum VehicleState implements Serializable, Comparable<VehicleState> {
         return name();
     }
 
-    public static VehicleState fromValue(String v) {
+    public static VehicleState_ fromValue(String v) {
         return valueOf(v);
     }
 }

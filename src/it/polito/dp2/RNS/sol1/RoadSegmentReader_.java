@@ -4,7 +4,7 @@ import java.util.Set;
 
 import it.polito.dp2.RNS.PlaceReader;
 
-public class RoadSegmentReader implements it.polito.dp2.RNS.RoadSegmentReader {
+public class RoadSegmentReader_ implements it.polito.dp2.RNS.RoadSegmentReader {
 
 	private String id;
 	private int capacity;

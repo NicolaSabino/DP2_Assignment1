@@ -28,7 +28,7 @@ import it.polito.dp2.RNS.sol1.jaxb.VState;
 import it.polito.dp2.RNS.sol1.jaxb.VType;
 import it.polito.dp2.RNS.sol1.jaxb.VehicleType;
 
-public class RnsInfoSerializer {
+public class RnsInfoSerializer_ {
 	private RnsReader 			monitor;	// used to access to the interface
 	private RnsReaderFactory	factory;	// factory used to instantiate the interface
 	private Marshaller			marshaller;
@@ -38,7 +38,7 @@ public class RnsInfoSerializer {
 	 * Constructor
 	 * @throws RnsReaderException 
 	 */
-	public RnsInfoSerializer() throws RnsReaderException {
+	public RnsInfoSerializer_() throws RnsReaderException {
 		// The implementation of the interfaces to be used as data source
 		// must be selected using the  `abstract factory` pattern:
 		// we must create the data source by instantiating 
@@ -62,10 +62,10 @@ public class RnsInfoSerializer {
             System.exit(1);
         }
 		System.err.println("The output file is:" + args[0]);
-		RnsInfoSerializer serializer;
+		RnsInfoSerializer_ serializer;
 		
 		try {
-			serializer = new RnsInfoSerializer();
+			serializer = new RnsInfoSerializer_();
 			serializer.createFile(args[0]);
 		} catch (RnsReaderException e) {
 			// An error occurs while the instantiation of the class
@@ -240,7 +240,6 @@ public class RnsInfoSerializer {
 			xgc.setTimezone(offsetInMinutes); 
 			return xgc;
 		} catch (DatatypeConfigurationException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			return null;
 		}

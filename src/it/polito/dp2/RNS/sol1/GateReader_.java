@@ -4,7 +4,7 @@ import java.util.Set;
 import it.polito.dp2.RNS.GateType;
 import it.polito.dp2.RNS.PlaceReader;
 
-public class GateReader implements it.polito.dp2.RNS.GateReader {
+public class GateReader_ implements it.polito.dp2.RNS.GateReader {
 	
 	// attributes
 	private String id;
@@ -12,7 +12,7 @@ public class GateReader implements it.polito.dp2.RNS.GateReader {
 	private int capacity;
 	private Set<PlaceReader> nextPlaces;
 	
-	public GateReader(String id, String type, int capacity, Set<PlaceReader> nextPlaces) {
+	public GateReader_(String id, String type, int capacity, Set<PlaceReader> nextPlaces) {
 		if(id != null) this.id = id;
 		if(type != null) this.type = GateType.valueOf(type);
 		if(capacity != 0) this.capacity = capacity;

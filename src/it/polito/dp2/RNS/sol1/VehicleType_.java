@@ -2,7 +2,7 @@ package it.polito.dp2.RNS.sol1;
 
 import java.io.Serializable;
 
-public enum VehicleType implements Serializable, Comparable<VehicleType> {
+public enum VehicleType_ implements Serializable, Comparable<VehicleType_> {
 	
 	CAR,
     TRUCK,
@@ -13,7 +13,7 @@ public enum VehicleType implements Serializable, Comparable<VehicleType> {
         return name();
     }
 
-    public static VehicleType fromValue(String v) {
+    public static VehicleType_ fromValue(String v) {
         return valueOf(v);
     }
 }

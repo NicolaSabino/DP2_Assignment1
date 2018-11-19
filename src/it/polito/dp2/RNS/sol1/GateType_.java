@@ -2,7 +2,7 @@ package it.polito.dp2.RNS.sol1;
 
 import java.io.Serializable;
 
-public enum GateType implements Serializable, Comparable<GateType> {
+public enum GateType_ implements Serializable, Comparable<GateType_> {
 	IN,
     OUT,
     INOUT;
@@ -11,7 +11,7 @@ public enum GateType implements Serializable, Comparable<GateType> {
         return name();
     }
 
-    public static GateType fromValue(String v) {
+    public static GateType_ fromValue(String v) {
         return valueOf(v);
     }
 }

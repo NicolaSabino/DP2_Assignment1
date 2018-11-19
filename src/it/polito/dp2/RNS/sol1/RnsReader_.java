@@ -13,7 +13,7 @@ import it.polito.dp2.RNS.VehicleReader;
 import it.polito.dp2.RNS.VehicleState;
 import it.polito.dp2.RNS.VehicleType;
 
-public class RnsReader implements it.polito.dp2.RNS.RnsReader {
+public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 	
 	private Set<ConnectionReader> connectionsReader;
 	private Set<GateReader> gatesReader;

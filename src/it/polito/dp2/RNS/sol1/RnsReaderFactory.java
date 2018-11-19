@@ -7,7 +7,7 @@ public class RnsReaderFactory extends it.polito.dp2.RNS.RnsReaderFactory {
 
 	@Override
 	public RnsReader newRnsReader() throws RnsReaderException {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 

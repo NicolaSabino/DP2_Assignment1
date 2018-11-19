@@ -6,7 +6,7 @@ import it.polito.dp2.RNS.PlaceReader;
 import it.polito.dp2.RNS.VehicleState;
 import it.polito.dp2.RNS.VehicleType;
 
-public class VehicleReader extends IdentifiedEntityReader implements it.polito.dp2.RNS.VehicleReader {
+public class VehicleReader  implements it.polito.dp2.RNS.VehicleReader {
 
 	@Override
 	public PlaceReader getDestination() {
@@ -40,6 +40,12 @@ public class VehicleReader extends IdentifiedEntityReader implements it.polito.d
 
 	@Override
 	public VehicleType getType() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getId() {
 		// TODO Auto-generated method stub
 		return null;
 	}

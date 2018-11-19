@@ -6,34 +6,39 @@ import it.polito.dp2.RNS.PlaceReader;
 
 public class RoadSegmentReader implements it.polito.dp2.RNS.RoadSegmentReader {
 
+	private String id;
+	private int capacity;
+	private String name;
+	private String roadName;
+	private Set<PlaceReader> nextPlaces;
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.name;
 	}
 
 	@Override
 	public String getRoadName() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.roadName;
 	}
 
 	@Override
 	public int getCapacity() {
 		// TODO Auto-generated method stub
-		return 0;
+		return this.capacity;
 	}
 
 	@Override
 	public Set<PlaceReader> getNextPlaces() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.nextPlaces;
 	}
 
 	@Override
 	public String getId() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.id;
 	}
 
 }

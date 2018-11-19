@@ -11,6 +11,13 @@ public class ParkingAreaReader implements it.polito.dp2.RNS.ParkingAreaReader {
 	private Set<String> services;
 	private Set<PlaceReader> nextplaces;
 	
+	public ParkingAreaReader(String id, int capacity, Set<String> services, Set<PlaceReader> nextPlaces) {
+		if(id != null) this.id = id;
+		if(capacity != 0) this.capacity = capacity;
+		if(services != null) this.services = services;
+		if(nextPlaces != null) this.nextplaces = nextPlaces;
+	}
+	
 	@Override
 	public Set<String> getServices() {
 		// TODO Auto-generated method stub

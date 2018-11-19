@@ -11,6 +11,7 @@ public class RoadSegmentReader implements it.polito.dp2.RNS.RoadSegmentReader {
 	private String name;
 	private String roadName;
 	private Set<PlaceReader> nextPlaces;
+	
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub

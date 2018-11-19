@@ -10,6 +10,8 @@
     <roadSegment name="" road=""/>
   </place>
   <place capacity="20" id="002">
+  	<nextPlace>001</nextPlace>
+  	<nextPlace>003</nextPlace>
   	<parkingArea>
   		<service>Restaurant</service>
   		<service>Market</service>

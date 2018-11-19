@@ -4,6 +4,11 @@ public class IdentifiedEntityReader implements it.polito.dp2.RNS.IdentifiedEntit
 	
 	protected String id;
 	
+	public IdentifiedEntityReader(String id) {
+		// TODO Auto-generated constructor stub
+		this.id = id;
+	}
+	
 	@Override
 	public String getId() {
 		return this.id;

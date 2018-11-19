@@ -6,23 +6,29 @@ public class PlaceReader implements it.polito.dp2.RNS.PlaceReader{
 
 	private String id;
 	private int capacity;
-	private Set<it.polito.dp2.RNS.PlaceReader> nextplaces;
+	private Set<PlaceReader> nextPlaces;
+	
+	public PlaceReader(String id, int capacity, PlaceReader nextPlaces) {
+		if(id != null) this.id = id;
+		if(capacity != 0) this.capacity = capacity;
+		//TODO ask if(nextPlaces != null) this.nextPlaces = nextPlaces;
+	}
+	
 	@Override
 	public String getId() {
-		// TODO Auto-generated method stub
 		return this.id;
 	}
 
 	@Override
 	public int getCapacity() {
-		// TODO Auto-generated method stub
 		return this.capacity;
 	}
 
+	// TODO 
+	// ask info to the assistant
 	@Override
 	public Set<it.polito.dp2.RNS.PlaceReader> getNextPlaces() {
-		// TODO Auto-generated method stub
-		return this.nextplaces;
+		return null;
 	}
 
 	

@@ -24,4 +24,6 @@ public class PlaceReader implements it.polito.dp2.RNS.PlaceReader, IdentifiedEnt
 		return null;
 	}
 
+	
+
 }

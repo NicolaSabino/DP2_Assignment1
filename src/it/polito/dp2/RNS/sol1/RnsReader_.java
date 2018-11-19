@@ -23,6 +23,13 @@ public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 	private Set<RoadSegmentReader_> roadSegmentsReader;
 	private VehicleReader_ vehicleReader;
 	private Set<VehicleReader_> vehicleReaders;
+	
+	/**
+	 * Constructor
+	 */
+	public RnsReader_() {
+		// empty constructor
+	}
 		
 
 	@Override

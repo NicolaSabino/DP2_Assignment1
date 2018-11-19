@@ -1,5 +1,6 @@
 package it.polito.dp2.RNS.sol1;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import it.polito.dp2.RNS.PlaceReader;
@@ -10,36 +11,53 @@ public class RoadSegmentReader_ implements it.polito.dp2.RNS.RoadSegmentReader {
 	private int capacity;
 	private String name;
 	private String roadName;
-	private Set<PlaceReader> nextPlaces;
+	private Set<PlaceReader_> nextPlaces;
+	
+	
+	public RoadSegmentReader_(String id, int capacity, String name, String roadName,Set<PlaceReader_> nextPlaces) {
+		if(id != null) this.id = id;
+		if(capacity != 0) this.capacity = capacity;
+		if(name != null) this.name = name;
+		if(roadName != null) this.roadName = roadName;
+		if(nextPlaces != null) this.nextPlaces = nextPlaces;
+	}
+	
+	@Override
+	public String getId() {
+		// TODO Auto-generated method stub
+		return this.id;
+	}
 	
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
 		return this.name;
 	}
 
 	@Override
 	public String getRoadName() {
-		// TODO Auto-generated method stub
 		return this.roadName;
 	}
 
 	@Override
 	public int getCapacity() {
-		// TODO Auto-generated method stub
 		return this.capacity;
 	}
 
-	@Override
+	/**
+	 * @Override
+	 * return an object
+	 * suitable respect the teacher's class
+	 * `PlaceReader`
+	 */
 	public Set<PlaceReader> getNextPlaces() {
-		// TODO Auto-generated method stub
-		return this.nextPlaces;
-	}
-
-	@Override
-	public String getId() {
-		// TODO Auto-generated method stub
-		return this.id;
+		// create an empty `return set`
+		Set<PlaceReader> returnSet = new HashSet<PlaceReader>();
+		// for each element in the attribute `this.nextPlaces`
+		// add it in the `return set`
+		for(PlaceReader_ tmp: this.nextPlaces){
+			returnSet.add(tmp);
+		}
+		return returnSet;
 	}
 
 }

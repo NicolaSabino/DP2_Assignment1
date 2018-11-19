@@ -3,13 +3,21 @@ package it.polito.dp2.RNS.sol1;
 import java.util.HashSet;
 import java.util.Set;
 
-public class PlaceReader_ implements it.polito.dp2.RNS.PlaceReader{
+import it.polito.dp2.RNS.PlaceReader;
+
+public class PlaceReader_ implements PlaceReader{
 
 	private String id;
 	private int capacity;
-	private Set<it.polito.dp2.RNS.sol1.PlaceReader_> nextPlaces;
+	private Set<PlaceReader_> nextPlaces;
 	
-	public PlaceReader_(String id, int capacity, Set<it.polito.dp2.RNS.sol1.PlaceReader_> nextPlaces) {
+	/**
+	 * Constructor
+	 * @param id
+	 * @param capacity
+	 * @param nextPlaces
+	 */
+	public PlaceReader_(String id, int capacity, Set<PlaceReader_> nextPlaces) {
 		if(id != null) this.id = id;
 		if(capacity != 0) this.capacity = capacity;
 		if(nextPlaces != null) this.nextPlaces = nextPlaces;
@@ -25,12 +33,24 @@ public class PlaceReader_ implements it.polito.dp2.RNS.PlaceReader{
 		return this.capacity;
 	}
 
-	// TODO 
-	// ask info to the assistant
-	@Override
-	public Set<it.polito.dp2.RNS.sol1.PlaceReader_> getNextPlaces() {
-		return this.nextPlaces;
+	/**
+	 * @Override
+	 * return an object
+	 * suitable respect the teacher's class
+	 * `PlaceReader`
+	 */
+	public Set<PlaceReader> getNextPlaces() {
+		// create an empty `return set`
+		Set<PlaceReader> returnSet = new HashSet<PlaceReader>();
+		// for each element in the attribute `this.nextPlaces`
+		// add it in the `return set`
+		for(PlaceReader_ tmp: this.nextPlaces){
+			returnSet.add(tmp);
+		}
+		return returnSet;
 	}
+
+	
 
 	
 

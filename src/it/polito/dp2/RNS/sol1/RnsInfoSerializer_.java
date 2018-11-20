@@ -32,7 +32,7 @@ public class RnsInfoSerializer_ {
 	private RnsReader 			monitor;	// used to access to the interface
 	private RnsReaderFactory	factory;	// factory used to instantiate the interface
 	private Marshaller			marshaller;
-	private JAXBContext 		jc;
+	private JAXBContext 		context;
 
 	/**
 	 * Constructor
@@ -47,7 +47,7 @@ public class RnsInfoSerializer_ {
 		this.factory	= RnsReaderFactory.newInstance();
 		this.monitor	= factory.newRnsReader();
 		this.marshaller = null;
-		this.jc			= null;
+		this.context	= null;
 	}
 
 	/**
@@ -95,10 +95,10 @@ public class RnsInfoSerializer_ {
 			
 			// Create a JAXBContext capable of handling classes generated into
             // the `it.polito.dp2.RNS.sol1.jaxb` package
-			this.jc = JAXBContext.newInstance( "it.polito.dp2.RNS.sol1.jaxb" );
+			this.context = JAXBContext.newInstance( "it.polito.dp2.RNS.sol1.jaxb" );
 			
 			// create a Marshaler and configure it
-            this.marshaller = this.jc.createMarshaller();
+            this.marshaller = this.context.createMarshaller();
             this.marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
             
             // marshaling operation

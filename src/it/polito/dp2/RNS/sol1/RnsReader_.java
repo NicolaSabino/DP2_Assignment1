@@ -32,9 +32,17 @@ public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 	}
 
 	private Set<PlaceReader> preparePlaces() {
-		Set<it.polito.dp2.RNS.PlaceReader> result = HashSet<PlaceReader>();
+		Set<it.polito.dp2.RNS.PlaceReader> result = new HashSet<>();
+		for(PlaceReader_ p: this.places){
+			// for each place id and capacity 
+			// are already seted ,
+			// calculate the missing information
+			p.get
+			
+			result.add(p);
+		}
 		
-		return null;
+		return result;
 	}
 
 	@Override

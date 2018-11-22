@@ -11,7 +11,6 @@ import it.polito.dp2.RNS.PlaceReader;
 public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 	
 	private it.polito.dp2.RNS.sol1.jaxb.RoadNavigationSystem rns;
-	private UtilityMap map;
 	private List<PlaceReader_> places;
 	
 	//return lists

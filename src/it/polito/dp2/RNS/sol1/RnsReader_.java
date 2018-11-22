@@ -1,47 +1,52 @@
 package it.polito.dp2.RNS.sol1;
 
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import javax.xml.datatype.XMLGregorianCalendar;
+import it.polito.dp2.RNS.PlaceReader;
 
-import it.polito.dp2.RNS.*;
-import it.polito.dp2.RNS.sol1.jaxb.RoadNavigationSystem;
 
 public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 	
-	private RoadNavigationSystem rns;
-	private Set<IdentifiedEntityReader>_entities;
-	private Set<ConnectionReader_> connections;
-	private Set<GateReader_> gates;
-	private Set<ParkingAreaReader_> parking;
-	private Set<PlaceReader_> places;
-	private Set<RoadSegmentReader_> road;
-	private VehicleReader_ vehicle;
-	private Set<VehicleReader_> vehicles;
+	private it.polito.dp2.RNS.sol1.jaxb.RoadNavigationSystem rns;
+	private List<PlaceReader_> places;
 	
-	private Set<IdentifiedEntityReader_> entities;
+	//return lists
+	private Set<it.polito.dp2.RNS.PlaceReader> res_places;
+	private Set<it.polito.dp2.RNS.ConnectionReader> res_connections;
+	private Set<it.polito.dp2.RNS.VehicleReader> res_vehicles;
+	
 
-	
 	/**
 	 * Constructor
 	 * @param rns 
 	 */
-	public RnsReader_(RoadNavigationSystem rns) {
+	public RnsReader_(it.polito.dp2.RNS.sol1.jaxb.RoadNavigationSystem rns) {
 		this.rns = rns;
+		this.map = new UtilityMap(rns);
+		this.places = this.map.places;
+		res_places = preparePlaces();
 	}
 
-	
+	private Set<PlaceReader> preparePlaces() {
+		Set<it.polito.dp2.RNS.PlaceReader> result = HashSet<PlaceReader>();
+		
+		return null;
+	}
+
 	@Override
 	public Set<it.polito.dp2.RNS.ConnectionReader> getConnections() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	
+	@Override
+	public Set<it.polito.dp2.RNS.GateReader> getGates(it.polito.dp2.RNS.GateType arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 	@Override
 	public Set<it.polito.dp2.RNS.ParkingAreaReader> getParkingAreas(Set<String> arg0) {
@@ -51,7 +56,6 @@ public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 
 	@Override
 	public it.polito.dp2.RNS.PlaceReader getPlace(String arg0) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -74,18 +78,11 @@ public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 	}
 
 	@Override
-	public Set<it.polito.dp2.RNS.GateReader> getGates(GateType arg0) {
+	public Set<it.polito.dp2.RNS.VehicleReader> getVehicles(Calendar arg0, Set<it.polito.dp2.RNS.VehicleType> arg1, it.polito.dp2.RNS.VehicleState arg2) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-
-	@Override
-	public Set<VehicleReader> getVehicles(Calendar arg0, Set<VehicleType> arg1, VehicleState arg2) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
+	
 
 }

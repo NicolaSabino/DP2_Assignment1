@@ -23,6 +23,16 @@ public class PlaceReader_ implements PlaceReader{
 		if(nextPlaces != null) this.nextPlaces = nextPlaces;
 	}
 	
+	/**
+	 * Second Constructor
+	 * @param id
+	 * @param capacity
+	 */
+	public PlaceReader_(String id, int capacity) {
+		if(id != null) this.id = id;
+		if(capacity != 0) this.capacity = capacity;
+	}
+	
 	@Override
 	public String getId() {
 		return this.id;

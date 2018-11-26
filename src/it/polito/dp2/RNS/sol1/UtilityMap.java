@@ -1,11 +1,15 @@
 package it.polito.dp2.RNS.sol1;
 
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import javax.xml.datatype.XMLGregorianCalendar;
+
 
 import it.polito.dp2.RNS.sol1.jaxb.GateType;
 import it.polito.dp2.RNS.sol1.jaxb.ParkingAreaType;
@@ -22,6 +26,7 @@ public class UtilityMap {
 	  public Map<String,RoadSegmentReader_> rs_map;
 	  public Map<String,ParkingAreaReader_> pa_map;
 	  public Map<String,GateReader_> g_map;
+	  public Map<String,VehicleReader_> v_map;
 	  //public List<PlaceReader_> p_list;
 	  
 	  /**
@@ -34,8 +39,9 @@ public class UtilityMap {
 		this.rs_map = new HashMap<>();
 		this.pa_map = new HashMap<>();
 		this.i_map = new HashMap<>();
+		this.v_map = new HashMap<>();
 		
-		//places
+		// PLACES
 		for(PlaceType p :rns.getPlace()){	// for each place in the system
 			IdentifiedEntityReader_ entity = new IdentifiedEntityReader_(p.getId());	// create a new entity
 			PlaceReader_ place = new PlaceReader_(entity,p.getCapacity());				// create a new PlaceReader
@@ -61,18 +67,23 @@ public class UtilityMap {
 			this.i_map.put(p.getId(), entity);		// store the IdentifiedEntityReader
 		}
 		
-		//vehicles
-		for(VehicleType v: rns.getVehicle()){
+		//  VEHICLES
+		for(VehicleType v: rns.getVehicle()){	// for each vehicle in the system
 			IdentifiedEntityReader_ entity = new IdentifiedEntityReader_(v.getId());	// create a new entity
-			PlaceReader_ position = this.p_map.get(v.getPosition());
-			PlaceReader_ origin = this.p_map.get(v.getOrigin());
-			PlaceReader_ destination = this.p_map.get(v.getDestination());
-			//VehicleReader_ vehicle = new VehicleReader_(entity, entryTime, origin, position, destination, state, type)
+			PlaceReader_ position = this.p_map.get(v.getPosition());					// get the position in p_map
+			PlaceReader_ origin = this.p_map.get(v.getOrigin());						// get the origin in p_map
+			PlaceReader_ destination = this.p_map.get(v.getDestination());				// get the destination in p_map
+			Calendar entryTime = CalendarConverter.toCalendar(v.getEntryTime());		// convert the entryTime
+			VehicleState_ state = VehicleState_.valueOf(v.getState().toString());		// convert the state
+			VehicleType_ type = VehicleType_.valueOf(v.getType().toString());			// convert the type
+			VehicleReader_ vehicle = new VehicleReader_(entity, entryTime, origin, position, destination, state, type);	// create a vehicle reader
+			this.v_map.put(v.getId(), vehicle);	// store the VehicleReader
+			this.i_map.put(v.getId(), entity);	// store the entity
 			
 		}
 		
 		
-		// next places
+		// NEXT PLACES
 		for(PlaceType p:rns.getPlace()){					// for each place
 			PlaceReader_ tmp = this.p_map.get(p.getId());	// get the corresponding reader
 			List<String> strings = p.getNextPlace();		// get the list of further places

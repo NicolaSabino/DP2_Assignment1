@@ -7,8 +7,6 @@ import java.util.Set;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
-import javax.xml.datatype.DatatypeConfigurationException;
-import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 import it.polito.dp2.RNS.ConnectionReader;
 import it.polito.dp2.RNS.GateReader;
@@ -127,7 +125,7 @@ public class RnsInfoSerializer {
 			
 			XMLGregorianCalendar entryTime = null;
 			Calendar cal = vehicle.getEntryTime();
-			entryTime = this.toXMLGregorianCalendar(cal);
+			entryTime = CalendarConverter.toXMLGregorianCalendar(cal);
 			temp.setEntryTime(entryTime);
 			
 			String type = vehicle.getType().toString();
@@ -223,27 +221,7 @@ public class RnsInfoSerializer {
 		return;
 	}
 	
-	private XMLGregorianCalendar toXMLGregorianCalendar(Calendar cal){
-		DatatypeFactory dtf;
-		try {
-			dtf = DatatypeFactory.newInstance();
-			XMLGregorianCalendar xgc = dtf.newXMLGregorianCalendar(); 
-			xgc.setYear(cal.get(Calendar.YEAR));
-			xgc.setDay(cal.get(Calendar.DAY_OF_MONTH));
-			xgc.setMonth(cal.get(Calendar.MONTH)+ 1);
-			xgc.setHour(cal.get(Calendar.HOUR_OF_DAY));
-			xgc.setMinute(cal.get(Calendar.MINUTE));
-			xgc.setSecond(cal.get(Calendar.SECOND));
-			xgc.setMillisecond(cal.get(Calendar.MILLISECOND));
-			// Calendar ZONE_OFFSET and DST_OFFSET fields are in milliseconds.
-			int offsetInMinutes = (cal.get(Calendar.ZONE_OFFSET) + cal.get(Calendar.DST_OFFSET)) / (60 * 1000);
-			xgc.setTimezone(offsetInMinutes); 
-			return xgc;
-		} catch (DatatypeConfigurationException e) {
-			e.printStackTrace();
-			return null;
-		}
-	}
+	
 	
 
 	

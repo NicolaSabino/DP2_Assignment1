@@ -7,14 +7,8 @@ import java.util.Set;
 
 public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 	
-	//private it.polito.dp2.RNS.sol1.jaxb.RoadNavigationSystem rns;
-	private UtilityMap utility;
-	//private List<PlaceReader_> places;
 	
-	//return lists
-	//private Set<it.polito.dp2.RNS.PlaceReader> res_places;
-	//private Set<it.polito.dp2.RNS.ConnectionReader> res_connections;
-	//private Set<it.polito.dp2.RNS.VehicleReader> res_vehicles;
+	private UtilityMap utility;
 	
 
 	/**
@@ -47,34 +41,17 @@ public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 	// DONE -- CHECK
 	@Override
 	public it.polito.dp2.RNS.PlaceReader getPlace(String arg0) {
-		PlaceReader_ p = this.utility.map.get(arg0);
+		PlaceReader_ p = this.utility.p_map.get(arg0);
 		return p;
 	}
 
-	// DONE -- CHECK
 	@Override
 	public Set<it.polito.dp2.RNS.PlaceReader> getPlaces(String arg0) {
-		Set<it.polito.dp2.RNS.PlaceReader> set = new HashSet<>();
-		if(arg0 == null){ // if arg0 is null get the complete list of places
-			for(PlaceReader_ tmp: this.utility.net){
-				set.add(tmp);
-			}
-		}else{ // otherwise get the specified element
-			PlaceReader_ p = this.utility.map.get(arg0);
-			set.add(p);
-		}
-		return set;
-		
+		return null;
 	}
 
 	@Override
 	public Set<it.polito.dp2.RNS.RoadSegmentReader> getRoadSegments(String arg0) {
-		Set<it.polito.dp2.RNS.RoadSegmentReader> set = new HashSet<>();
-		if(arg0 == null){ // if arg0 is null get the complete list of road segments
-			
-		}else{ // othewise get the specified element 
-			
-		}
 		return null;
 	}
 

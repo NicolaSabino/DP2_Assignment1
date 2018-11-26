@@ -7,35 +7,23 @@ import it.polito.dp2.RNS.PlaceReader;
 
 public class PlaceReader_ implements PlaceReader{
 
-	private String id;
+	private IdentifiedEntityReader_ id;
 	private int capacity;
 	private Set<PlaceReader_> nextPlaces;
-	
-	/**
-	 * Constructor
-	 * @param id
-	 * @param capacity
-	 * @param nextPlaces
-	 */
-	public PlaceReader_(String id, int capacity, Set<PlaceReader_> nextPlaces) {
-		if(id != null) this.id = id;
-		if(capacity != 0) this.capacity = capacity;
-		if(nextPlaces != null) this.nextPlaces = nextPlaces;
-	}
 	
 	/**
 	 * Second Constructor
 	 * @param id
 	 * @param capacity
 	 */
-	public PlaceReader_(String id, int capacity) {
+	public PlaceReader_(IdentifiedEntityReader_ id, int capacity) {
 		if(id != null) this.id = id;
 		if(capacity != 0) this.capacity = capacity;
 	}
 	
 	@Override
 	public String getId() {
-		return this.id;
+		return this.id.getId();
 	}
 
 	@Override
@@ -59,11 +47,13 @@ public class PlaceReader_ implements PlaceReader{
 		}
 		return returnSet;
 	}
-
 	
-
+	/**
+	 * Set `nextPlaces`
+	 * @param set
+	 */
+	public void setNextPlaces(Set<PlaceReader_> set){
+		this.nextPlaces = set;
+	}
 	
-
-	
-
 }

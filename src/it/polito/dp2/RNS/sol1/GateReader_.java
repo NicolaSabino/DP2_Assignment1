@@ -1,6 +1,5 @@
 package it.polito.dp2.RNS.sol1;
 
-import java.util.HashSet;
 import java.util.Set;
 
 import it.polito.dp2.RNS.GateReader;
@@ -10,57 +9,33 @@ import it.polito.dp2.RNS.PlaceReader;
 public class GateReader_ implements GateReader {
 	
 	// attributes
-	private String id;
-	private GateType type;
-	private int capacity;
-	private Set<PlaceReader_> nextPlaces;
+	private PlaceReader_ place;
+	private GateType_ type;
 	
-	/**
-	 * Constructor
-	 * @param id
-	 * @param type
-	 * @param capacity
-	 * @param nextPlaces
-	 */
-	public GateReader_(String id, String type, int capacity, Set<PlaceReader_> nextPlaces) {
-		if(id != null) this.id = id;
-		if(type != null) this.type = GateType.valueOf(type);
-		if(capacity != 0) this.capacity = capacity;
-		if(nextPlaces != null) this.nextPlaces = nextPlaces;
+	public GateReader_(PlaceReader_ place, GateType_ type) {
+		if( place != null) this.place = place;
+		if( type != null) this.type = type;
 	}
+	
 	
 	@Override
 	public String getId() {
-		return this.id;
+		return this.place.getId();
 	}
 	
 	@Override
 	public int getCapacity() {
-		return this.capacity;
+		return this.place.getCapacity();
 	}
 	
 	@Override
 	public GateType getType() {
-		return this.type;
+		return GateType.valueOf(this.type.toString());
 	}
 
-	
-
-	/**
-	 * @Override
-	 * return an object
-	 * suitable respect the teacher's class
-	 * `PlaceReader`
-	 */
+	@Override
 	public Set<PlaceReader> getNextPlaces() {
-		// create an empty `return set`
-		Set<PlaceReader> returnSet = new HashSet<PlaceReader>();
-		// for each element in the attribute `this.nextPlaces`
-		// add it in the `return set`
-		for(PlaceReader_ tmp: this.nextPlaces){
-			returnSet.add(tmp);
-		}
-		return returnSet;
+		return this.place.getNextPlaces();
 	}
 
 }

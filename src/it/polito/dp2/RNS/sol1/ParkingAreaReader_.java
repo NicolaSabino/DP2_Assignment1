@@ -1,34 +1,23 @@
 package it.polito.dp2.RNS.sol1;
 
-import java.util.HashSet;
 import java.util.Set;
 
 import it.polito.dp2.RNS.PlaceReader;
 
 public class ParkingAreaReader_ implements it.polito.dp2.RNS.ParkingAreaReader {
 	
-	private String id;
-	private int capacity;
+	private PlaceReader_ place;
 	private Set<String> services;
-	private Set<PlaceReader_> nextPlaces;
 	
-	/**
-	 * Constructor
-	 * @param id
-	 * @param capacity
-	 * @param services
-	 * @param nextPlaces
-	 */
-	public ParkingAreaReader_(String id, int capacity, Set<String> services, Set<PlaceReader_> nextPlaces) {
-		if(id != null) this.id = id;
-		if(capacity != 0) this.capacity = capacity;
-		if(services != null) this.services = services;
-		if(nextPlaces != null) this.nextPlaces = nextPlaces;
+	public ParkingAreaReader_(PlaceReader_ place, Set<String> services) {
+		if( place != null) this.place = place;
+		if( services != null) this.services = services;
 	}
+	
 	
 	@Override
 	public String getId() {
-		return this.id;
+		return this.place.getId();
 	}
 	
 	@Override
@@ -38,24 +27,12 @@ public class ParkingAreaReader_ implements it.polito.dp2.RNS.ParkingAreaReader {
 
 	@Override
 	public int getCapacity() {
-		return this.capacity;
+		return this.place.getCapacity();
 	}
-
-	/**
-	 * @Override
-	 * return an object
-	 * suitable respect the teacher's class
-	 * `PlaceReader`
-	 */
+	
+	@Override
 	public Set<PlaceReader> getNextPlaces() {
-		// create an empty `return set`
-		Set<PlaceReader> returnSet = new HashSet<PlaceReader>();
-		// for each element in the attribute `this.nextPlaces`
-		// add it in the `return set`
-		for(PlaceReader_ tmp: this.nextPlaces){
-			returnSet.add(tmp);
-		}
-		return returnSet;
+		return this.place.getNextPlaces();
 	}
 
 	

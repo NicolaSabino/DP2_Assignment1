@@ -9,7 +9,7 @@ import it.polito.dp2.RNS.VehicleType;
 
 public class VehicleReader_  implements it.polito.dp2.RNS.VehicleReader {
 
-	private String id;
+	private IdentifiedEntityReader_ id;
 	private Calendar entryTime;
 	private PlaceReader_ origin;
 	private PlaceReader_ position;
@@ -27,7 +27,7 @@ public class VehicleReader_  implements it.polito.dp2.RNS.VehicleReader {
 	 * @param state
 	 * @param type
 	 */
-	public VehicleReader_(String id, Calendar entryTime, PlaceReader_ origin, 
+	public VehicleReader_(IdentifiedEntityReader_ id, Calendar entryTime, PlaceReader_ origin, 
 			PlaceReader_ position, PlaceReader_ destination, VehicleState_ state, VehicleType_ type) {
 		if(id != null) this.id = id;
 		if(entryTime != null) this.entryTime = entryTime;
@@ -41,7 +41,7 @@ public class VehicleReader_  implements it.polito.dp2.RNS.VehicleReader {
 	
 	@Override
 	public String getId() {
-		return this.id;
+		return this.id.getId();
 	}
 	
 	public PlaceReader getDestination() {

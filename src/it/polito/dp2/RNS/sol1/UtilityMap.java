@@ -133,5 +133,15 @@ public class UtilityMap {
 	public SortedMap<String, PlaceReader_> getByPrefix( String prefix ) {
 	        return this.p_map.subMap( prefix, prefix + Character.MAX_VALUE );
 	}
+	
+	/**
+	 * This method check if a  generic set is contained into another one
+	 * @param setA - Set
+	 * @param setB - SubSet
+	 * @return true if so, false otherwise
+	 */
+	public <T> boolean isSubset(Set<T> setA, Set<T> setB) {
+	    return setB.containsAll(setA);
+	  }
 
 }

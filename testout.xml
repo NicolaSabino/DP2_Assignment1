@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="dp2-student" name="it.polito.dp2.RNS.lab1.tests.RnsTests" skipped="0" tests="0" time="0.052" timestamp="2018-11-26T13:56:25">
+<testsuite errors="1" failures="0" hostname="dp2-student" name="it.polito.dp2.RNS.lab1.tests.RnsTests" skipped="0" tests="0" time="0.048" timestamp="2018-11-26T17:20:52">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="lib.dir" value="/home/dp2/workspace/PROJECT/lib" />
@@ -36,14 +36,14 @@
     <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="exit.code" value="126" />
     <property name="java.class.version" value="52.0" />
-    <property name="it.polito.dp2.RNS.Random.seed" value="1145624" />
+    <property name="it.polito.dp2.RNS.Random.seed" value="1182051" />
     <property name="user.country" value="US" />
     <property name="java.home" value="/usr/lib/jvm/jdk1.8.0_141/jre" />
     <property name="java.vm.info" value="mixed mode" />
     <property name="ant.file.type.RNS-1" value="file" />
     <property name="ant.file" value="/home/dp2/workspace/PROJECT/build.xml" />
     <property name="os.version" value="4.15.0-34-generic" />
-    <property name="temp.dir" value="/home/dp2/workspace/PROJECT/temp1683532905" />
+    <property name="temp.dir" value="/home/dp2/workspace/PROJECT/temp850113378" />
     <property name="ant.file.RNS-1" value="/home/dp2/workspace/PROJECT/build.xml" />
     <property name="path.separator" value=":" />
     <property name="RnsInfo.RnsReaderFactory" value="it.polito.dp2.RNS.Random.RnsReaderFactoryImpl" />
@@ -61,10 +61,10 @@
     <property name="java.vendor.url" value="http://java.oracle.com/" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner it.polito.dp2.RNS.lab1.tests.RnsTests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/dp2/workspace/PROJECT/testout.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/dp2/workspace/PROJECT/junitvmwatcher8264545105986370020.properties propsfile=/home/dp2/workspace/PROJECT/junit8117007145087058332.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner it.polito.dp2.RNS.lab1.tests.RnsTests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/dp2/workspace/PROJECT/testout.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/dp2/workspace/PROJECT/junitvmwatcher2362514507358721736.properties propsfile=/home/dp2/workspace/PROJECT/junit1469707812248160980.properties" />
     <property name="java.class.path" value="/home/dp2/workspace/PROJECT/lib/RNS.jar:/home/dp2/workspace/PROJECT/lib/RNSRandom.jar:/home/dp2/workspace/PROJECT/build:/home/dp2/workspace/PROJECT/lib/lab1.jar:/home/dp2/workspace/PROJECT/lib/junit-4.12.jar:/home/dp2/workspace/PROJECT/lib/hamcrest-core-1.3.jar:/home/dp2/Software/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/home/dp2/Software/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/home/dp2/Software/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/home/dp2/Software/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
-    <property name="TSTAMP" value="1456" />
+    <property name="TSTAMP" value="1820" />
     <property name="test.class" value="it.polito.dp2.RNS.lab1.tests.RnsTests" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="java.vm.specification.version" value="1.8" />
@@ -74,12 +74,12 @@
     <property name="eclipse.pdebuild.home" value="/home/dp2/Software/eclipse/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/.//" />
     <property name="java.io.tmpdir" value="/tmp" />
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
-    <property name="temp.xmlfile" value="/home/dp2/workspace/PROJECT/temp1683532905/out395526812.xml" />
+    <property name="temp.xmlfile" value="/home/dp2/workspace/PROJECT/temp850113378/out240962561.xml" />
     <property name="os.arch" value="i386" />
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
     <property name="it.polito.dp2.RNS.Random.testcase" value="0" />
     <property name="java.ext.dirs" value="/usr/lib/jvm/jdk1.8.0_141/jre/lib/ext:/usr/java/packages/lib/ext" />
-    <property name="user.dir" value="/home/dp2/workspace/PROJECT/temp1683532905" />
+    <property name="user.dir" value="/home/dp2/workspace/PROJECT/temp850113378" />
     <property name="line.separator" value="&#xa;" />
     <property name="java.vm.name" value="Java HotSpot(TM) Server VM" />
     <property name="basedir" value="/home/dp2/workspace/PROJECT" />
@@ -88,8 +88,8 @@
     <property name="source" value="1.8" />
     <property name="schema.dir" value="/home/dp2/workspace/PROJECT/xsd" />
     <property name="file.encoding" value="UTF-8" />
-    <property name="seed" value="1145624" />
-    <property name="it.polito.dp2.RNS.sol1.RnsInfo.file" value="/home/dp2/workspace/PROJECT/temp1683532905/out395526812.xml" />
+    <property name="seed" value="1182051" />
+    <property name="it.polito.dp2.RNS.sol1.RnsInfo.file" value="/home/dp2/workspace/PROJECT/temp850113378/out240962561.xml" />
     <property name="java.specification.version" value="1.8" />
     <property name="lab1.location" value="/home/dp2/workspace/PROJECT" />
     <property name="src.dir" value="/home/dp2/workspace/PROJECT/src" />
@@ -107,7 +107,7 @@ Caused by: java.lang.ClassNotFoundException: it.polito.dp2.RNS.sol1.RnsReaderFac
 	at it.polito.dp2.RNS.RnsReaderFactory.newInstance(RnsReaderFactory.java:52)
 </error>
   </testcase>
-  <system-out><![CDATA[Random RnsReader: Using seed: 1145624
+  <system-out><![CDATA[Random RnsReader: Using seed: 1182051
 Random RnsReader: Test case: 0
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

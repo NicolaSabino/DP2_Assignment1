@@ -9,7 +9,7 @@ import it.polito.dp2.RNS.PlaceReader;
 public class GateReader_ implements GateReader {
 	
 	// attributes
-	private PlaceReader_ place;
+	public PlaceReader_ place;
 	private GateType_ type;
 	
 	public GateReader_(PlaceReader_ place, GateType_ type) {

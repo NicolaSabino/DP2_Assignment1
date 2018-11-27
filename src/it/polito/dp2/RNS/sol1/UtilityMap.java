@@ -51,6 +51,8 @@ public class UtilityMap {
 		this.g_map = new HashMap<>();
 		this.c_list = new ArrayList<>();
 		
+		
+		
 		// PLACES
 		for(PlaceType p :rns.getPlace()){	// for each place in the system
 			IdentifiedEntityReader_ entity = new IdentifiedEntityReader_(p.getId());	// create a new entity
@@ -72,20 +74,31 @@ public class UtilityMap {
 				GateReader_ g = new GateReader_(place, gtt);											// create the GateReader
 				this.g_map.put(p.getId(),g);															// store the GateReader
 			}
+			
+			
 			this.p_map.put(p.getId(),place);	// store the PlaceReader
-			this.i_map.put(p.getId(), entity);	// store the IdentifiedEntityReader
+			this.i_map.put(p.getId(),entity);	// store the IdentifiedEntityReader
+		}
+		
+		
+		// CONNECTIONS
+		for(ConnectionType c: rns.getConnection()){ // for each connection in the system
+			PlaceReader_ from = this.p_map.get(c.getFrom());							// get the `from` in the p_map
+			PlaceReader_ to = this.p_map.get(c.getTo());								// get the `to` in the p_map
+			ConnectionReader_ connection = new ConnectionReader_(from, to);				// create a new ConnectionReader
+			this.c_list.add(connection);												// store the connection reader
 		}
 		
 		// NEXT PLACES
 		for(PlaceType p:rns.getPlace()){ // for each place in the system
-			PlaceReader_ tmp = this.p_map.get(p.getId());	// get the corresponding reader in p_map
-			List<String> strings = p.getNextPlace();		// get the list of further places from p
-			Set<PlaceReader_> nextHops = new HashSet<>();	// create an empty HashSet
-			for(String tmp2:strings){						// for each next place in the list coming from p
-				PlaceReader_ nextHop = this.p_map.get(tmp2);	// get the corresponding next hop-reader from p_map
-				nextHops.add(nextHop); 							// add this hop in the hash set
+			// search all connections where from == p.id
+			for(ConnectionReader_ cr:this.c_list){
+				PlaceReader_ pr = this.p_map.get(p.getId());
+				if(cr.getFrom().getId().compareTo(p.getId()) == 0){
+					PlaceReader_ to = this.p_map.get(cr.getTo().getId());
+					pr.addNextPlace(to);
+				}
 			}
-			tmp.setNextPlaces(nextHops); //update the `next place` Set for this element
 		}
 		
 		//  VEHICLES
@@ -103,13 +116,7 @@ public class UtilityMap {
 			
 		}
 		
-		// CONNECTIONS
-		for(ConnectionType c: rns.getConnection()){ // for each connection in the system
-			PlaceReader_ from = this.p_map.get(c.getFrom());							// get the `from` in the p_map
-			PlaceReader_ to = this.p_map.get(c.getTo());								// get the `to` in the p_map
-			ConnectionReader_ connection = new ConnectionReader_(from, to);				// create a new ConnectionReader
-			this.c_list.add(connection);												// store the connection reader
-		}
+		
 		
 		
 		

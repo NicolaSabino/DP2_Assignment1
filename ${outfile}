@@ -9,90 +9,70 @@
     <place capacity="1" id="Gate0">
         <gate>IN</gate>
     </place>
-    <place capacity="44" id="PA000">
+    <place capacity="43" id="PA000">
         <parkingArea>
             <service>Bar</service>
         </parkingArea>
     </place>
-    <place capacity="20" id="SS0-S0">
-        <roadSegment name="S0" road="SS0"/>
+    <place capacity="34" id="A0-S0">
+        <roadSegment name="S0" road="A0"/>
     </place>
-    <place capacity="25" id="SP0-S2">
-        <roadSegment name="S2" road="SP0"/>
+    <place capacity="48" id="SS0-S3">
+        <roadSegment name="S3" road="SS0"/>
     </place>
-    <place capacity="35" id="SP1-S1">
-        <roadSegment name="S1" road="SP1"/>
+    <place capacity="42" id="SS0-S4">
+        <roadSegment name="S4" road="SS0"/>
     </place>
-    <place capacity="31" id="SP1-S0">
-        <roadSegment name="S0" road="SP1"/>
+    <place capacity="35" id="SS0-S5">
+        <roadSegment name="S5" road="SS0"/>
     </place>
-    <place capacity="36" id="SP0-S5">
-        <roadSegment name="S5" road="SP0"/>
-    </place>
-    <place capacity="20" id="SS0-S1">
+    <place capacity="18" id="SS0-S1">
         <roadSegment name="S1" road="SS0"/>
     </place>
-    <place capacity="22" id="SP1-S2">
-        <roadSegment name="S2" road="SP1"/>
-    </place>
-    <place capacity="32" id="SP1-S4">
-        <roadSegment name="S4" road="SP1"/>
-    </place>
-    <place capacity="40" id="SP0-S4">
-        <roadSegment name="S4" road="SP0"/>
-    </place>
-    <place capacity="40" id="SP1-S5">
-        <roadSegment name="S5" road="SP1"/>
-    </place>
-    <place capacity="36" id="SP1-S8">
-        <roadSegment name="S8" road="SP1"/>
-    </place>
-    <place capacity="19" id="SS0-S2">
+    <place capacity="40" id="SS0-S2">
         <roadSegment name="S2" road="SS0"/>
     </place>
-    <place capacity="12" id="SP1-S6">
-        <roadSegment name="S6" road="SP1"/>
+    <place capacity="26" id="A0-S1">
+        <roadSegment name="S1" road="A0"/>
     </place>
-    <place capacity="21" id="SP0-S1">
-        <roadSegment name="S1" road="SP0"/>
+    <place capacity="40" id="A1-S0">
+        <roadSegment name="S0" road="A1"/>
     </place>
-    <place capacity="20" id="SP0-S6">
-        <roadSegment name="S6" road="SP0"/>
+    <place capacity="45" id="SS0-S0">
+        <roadSegment name="S0" road="SS0"/>
     </place>
-    <place capacity="45" id="SP1-S3">
-        <roadSegment name="S3" road="SP1"/>
+    <place capacity="10" id="A0-S2">
+        <roadSegment name="S2" road="A0"/>
     </place>
-    <place capacity="33" id="SP0-S3">
-        <roadSegment name="S3" road="SP0"/>
+    <place capacity="44" id="A1-S1">
+        <roadSegment name="S1" road="A1"/>
     </place>
-    <place capacity="20" id="SP0-S0">
-        <roadSegment name="S0" road="SP0"/>
+    <place capacity="19" id="A0-S3">
+        <roadSegment name="S3" road="A0"/>
     </place>
-    <place capacity="21" id="SP1-S7">
-        <roadSegment name="S7" road="SP1"/>
+    <place capacity="12" id="SS0-S6">
+        <roadSegment name="S6" road="SS0"/>
     </place>
-    <connection from="PA000" to="SP1-S1"/>
-    <connection from="SP0-S5" to="SP0-S6"/>
-    <connection from="Gate0" to="SS0-S0"/>
-    <connection from="SP0-S4" to="SP0-S5"/>
-    <connection from="SP0-S2" to="SP0-S3"/>
-    <connection from="SP1-S6" to="SP1-S7"/>
+    <place capacity="34" id="A0-S4">
+        <roadSegment name="S4" road="A0"/>
+    </place>
+    <connection from="SS0-S6" to="Gate1"/>
+    <connection from="A0-S4" to="Gate1"/>
+    <connection from="Gate0" to="A0-S0"/>
+    <connection from="A1-S1" to="Gate2"/>
+    <connection from="A0-S4" to="PA000"/>
     <connection from="SS0-S0" to="SS0-S1"/>
-    <connection from="Gate0" to="SP1-S0"/>
-    <connection from="Gate2" to="SP0-S0"/>
-    <connection from="SP1-S5" to="SP1-S6"/>
-    <connection from="SP1-S3" to="SP1-S4"/>
-    <connection from="SP1-S7" to="SP1-S8"/>
-    <connection from="SP0-S1" to="SP0-S2"/>
-    <connection from="SP0-S6" to="Gate1"/>
-    <connection from="SP1-S0" to="SP1-S1"/>
-    <connection from="SP1-S1" to="PA000"/>
-    <connection from="SP1-S4" to="SP1-S5"/>
+    <connection from="SS0-S2" to="SS0-S3"/>
+    <connection from="SS0-S4" to="SS0-S5"/>
+    <connection from="SS0-S5" to="SS0-S6"/>
+    <connection from="A0-S3" to="A0-S4"/>
+    <connection from="Gate2" to="SS0-S0"/>
+    <connection from="A0-S0" to="A0-S1"/>
+    <connection from="A0-S1" to="A0-S2"/>
+    <connection from="PA000" to="A0-S4"/>
+    <connection from="Gate0" to="A1-S0"/>
     <connection from="SS0-S1" to="SS0-S2"/>
-    <connection from="SP0-S0" to="SP0-S1"/>
-    <connection from="SS0-S2" to="Gate1"/>
-    <connection from="SP1-S8" to="Gate2"/>
-    <connection from="SP0-S3" to="SP0-S4"/>
-    <connection from="SP1-S1" to="SP1-S2"/>
-    <connection from="SP1-S2" to="SP1-S3"/>
+    <connection from="A0-S2" to="A0-S3"/>
+    <connection from="SS0-S3" to="SS0-S4"/>
+    <connection from="A1-S0" to="A1-S1"/>
 </roadNavigationSystem>

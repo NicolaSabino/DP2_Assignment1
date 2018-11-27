@@ -11,6 +11,17 @@ public class PlaceReader_ implements PlaceReader{
 	private int capacity;
 	private Set<PlaceReader_> nextPlaces;
 	
+	
+	/**
+	 * Second Constructor
+	 * @param id
+	 * @param capacity
+	 */
+	public PlaceReader_(IdentifiedEntityReader_ id) {
+		if(id != null) this.id = id;
+		this.nextPlaces = new HashSet<>();
+	}
+	
 	/**
 	 * Second Constructor
 	 * @param id
@@ -49,12 +60,13 @@ public class PlaceReader_ implements PlaceReader{
 		return returnSet;
 	}
 	
-	/**
-	 * Set `nextPlaces`
-	 * @param set
-	 */
-	public void setNextPlaces(Set<PlaceReader_> set){
-		this.nextPlaces = set;
+	
+	public void addNextPlace(PlaceReader_ pr){
+		this.nextPlaces.add(pr);
+	}
+
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
 	}
 	
 }

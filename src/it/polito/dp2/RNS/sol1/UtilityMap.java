@@ -48,6 +48,7 @@ public class UtilityMap {
 		this.pa_map = new HashMap<>();
 		this.i_map = new HashMap<>();
 		this.v_map = new HashMap<>();
+		this.g_map = new HashMap<>();
 		this.c_list = new ArrayList<>();
 		
 		// PLACES
@@ -72,8 +73,19 @@ public class UtilityMap {
 				this.g_map.put(p.getId(),g);															// store the GateReader
 			}
 			this.p_map.put(p.getId(),place);	// store the PlaceReader
-			//this.p_list.add(place);				// store the PlaceReader in a list (for generate next places)
-			this.i_map.put(p.getId(), entity);		// store the IdentifiedEntityReader
+			this.i_map.put(p.getId(), entity);	// store the IdentifiedEntityReader
+		}
+		
+		// NEXT PLACES
+		for(PlaceType p:rns.getPlace()){ // for each place in the system
+			PlaceReader_ tmp = this.p_map.get(p.getId());	// get the corresponding reader in p_map
+			List<String> strings = p.getNextPlace();		// get the list of further places from p
+			Set<PlaceReader_> nextHops = new HashSet<>();	// create an empty HashSet
+			for(String tmp2:strings){						// for each next place in the list coming from p
+				PlaceReader_ nextHop = this.p_map.get(tmp2);	// get the corresponding next hop-reader from p_map
+				nextHops.add(nextHop); 							// add this hop in the hash set
+			}
+			tmp.setNextPlaces(nextHops); //update the `next place` Set for this element
 		}
 		
 		//  VEHICLES
@@ -99,18 +111,6 @@ public class UtilityMap {
 			this.c_list.add(connection);												// store the connection reader
 		}
 		
-		
-		// NEXT PLACES
-		for(PlaceType p:rns.getPlace()){ // for each place in the system
-			PlaceReader_ tmp = this.p_map.get(p.getId());	// get the corresponding reader in p_map
-			List<String> strings = p.getNextPlace();		// get the list of further places from p
-			Set<PlaceReader_> nextHops = new HashSet<>();	// create an empty HashSet
-			for(String tmp2:strings){						// for each next place in the list coming from p
-				PlaceReader_ nextHop = this.p_map.get(tmp2);	// get the corresponding next hop-reader from p_map
-				nextHops.add(nextHop); 							// add this hop in the hash set
-			}
-			tmp.setNextPlaces(nextHops); //update the `next place` Set for this element
-		}
 		
 		
 		

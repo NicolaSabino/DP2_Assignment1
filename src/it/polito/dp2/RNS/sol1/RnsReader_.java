@@ -5,6 +5,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import it.polito.dp2.RNS.PlaceReader;
+
 
 public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 	
@@ -20,11 +22,16 @@ public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 		this.utility = new UtilityMap(rns);
 		
 		// uncomment to test the program
-		// System.out.println(this.getConnections());
-		// System.out.println(this.getGates());
-		// System.out.println(this.getPlace());
-		// System.out.println(this.getPlaces());
-		
+		//System.out.println(this.getPlaces(null));
+		System.out.println("--------------------------");
+		for(PlaceReader p:this.getPlaces(null)){
+			System.out.println(p);
+			for(PlaceReader nh:p.getNextPlaces()){
+				System.out.print("\t");
+				System.out.println(nh);
+			}
+		}
+		System.out.println("--------------------------");
 	}
 
 	/**

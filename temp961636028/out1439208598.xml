@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roadNavigationSystem>
+    <place capacity="1" id="Gate1">
+        <gate>OUT</gate>
+    </place>
+    <place capacity="2" id="Gate2">
+        <gate>INOUT</gate>
+    </place>
+    <place capacity="1" id="Gate0">
+        <gate>IN</gate>
+    </place>
+    <place capacity="16" id="PA000">
+        <parkingArea>
+            <service>Restaurant</service>
+            <service>Toilet</service>
+        </parkingArea>
+    </place>
+    <place capacity="20" id="PA001">
+        <parkingArea>
+            <service>Toilet</service>
+            <service>Bar</service>
+        </parkingArea>
+    </place>
+    <place capacity="16" id="SP0-S0">
+        <roadSegment name="S0" road="SP0"/>
+    </place>
+    <place capacity="15" id="SP0-S1">
+        <roadSegment name="S1" road="SP0"/>
+    </place>
+    <place capacity="19" id="SP0-S2">
+        <roadSegment name="S2" road="SP0"/>
+    </place>
+    <place capacity="46" id="A0-S1">
+        <roadSegment name="S1" road="A0"/>
+    </place>
+    <place capacity="50" id="A0-S0">
+        <roadSegment name="S0" road="A0"/>
+    </place>
+    <connection from="A0-S1" to="PA001"/>
+    <connection from="PA001" to="A0-S1"/>
+    <connection from="SP0-S0" to="SP0-S1"/>
+    <connection from="A0-S0" to="A0-S1"/>
+    <connection from="Gate0" to="SP0-S0"/>
+    <connection from="SP0-S1" to="SP0-S2"/>
+    <connection from="Gate2" to="A0-S0"/>
+    <connection from="SP0-S2" to="Gate2"/>
+    <connection from="A0-S1" to="Gate1"/>
+    <connection from="SP0-S0" to="PA000"/>
+    <connection from="PA000" to="SP0-S0"/>
+</roadNavigationSystem>

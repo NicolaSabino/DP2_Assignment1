@@ -19,6 +19,7 @@ public class PlaceReader_ implements PlaceReader{
 	public PlaceReader_(IdentifiedEntityReader_ id, int capacity) {
 		if(id != null) this.id = id;
 		if(capacity != 0) this.capacity = capacity;
+		this.nextPlaces = new HashSet<>();
 	}
 	
 	@Override

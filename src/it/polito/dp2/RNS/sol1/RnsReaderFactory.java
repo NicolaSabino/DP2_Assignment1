@@ -18,14 +18,14 @@ import it.polito.dp2.RNS.RnsReader;
 import it.polito.dp2.RNS.RnsReaderException;
 import it.polito.dp2.RNS.sol1.jaxb.RoadNavigationSystem;
 
-public class RnsReaderFactory_ extends it.polito.dp2.RNS.RnsReaderFactory {
+public class RnsReaderFactory extends it.polito.dp2.RNS.RnsReaderFactory {
 	
 	private File		inputFile;
 	private JAXBContext context;
 	private RnsReader_	result;
 	private File		schema;
 	
-	public RnsReaderFactory_() {
+	public RnsReaderFactory() {
 		this.schema = new File("xsd/rnsInfo.xsd");
 	}
 
@@ -33,12 +33,12 @@ public class RnsReaderFactory_ extends it.polito.dp2.RNS.RnsReaderFactory {
 	public RnsReader newRnsReader() throws RnsReaderException {
 		
 		// Check if the `File` system property is correctly setted
-		if(System.getProperty("it.polito.dp2.NFV.sol1.NfvInfo.file")==null)
+		if(System.getProperty("it.polito.dp2.RNS.sol1.RnsInfo.file")==null)
 			// generate a new instance of RnsReaderException
 			throw new RnsReaderException("Empty system property (File)");
 		
 		// Save the system property
-		String filename =System.getProperty("it.polito.dp2.NFV.sol1.NfvInfo.file");
+		String filename =System.getProperty("it.polito.dp2.RNS.sol1.RnsInfo.file");
 		this.inputFile= new File(filename);
 		
 		try{

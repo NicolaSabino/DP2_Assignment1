@@ -154,11 +154,36 @@ public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 	 * @param since - the entrance date/time since when vehicles have to be selected or null to select vehicles with any entrance date/time.
      * @param types - the set of types of vehicles that have to be selected or null to select vehicles of any type.
      * @param state - the state of vehicles to be selected or null to select vehicles in any state.
+     * @return a set of interfaces for reading the selected vehicles.
 	 */
 	@Override
 	public Set<it.polito.dp2.RNS.VehicleReader> getVehicles(Calendar arg0, Set<it.polito.dp2.RNS.VehicleType> arg1, it.polito.dp2.RNS.VehicleState arg2) {
-		// TODO Auto-generated method stub
-		return null;
+		Set<it.polito.dp2.RNS.VehicleReader> result_set = new HashSet<>();
+		if(arg0 != null){ // select all vehicles according to date and time of entrance
+			for(Map.Entry<String, VehicleReader_> entry: this.utility.v_map.entrySet()){ // for each vehicle
+				if(entry.getValue().getEntryTime().compareTo(arg0) >= 0){					// if  the entrance is after (or the same) the indicated date and time
+					result_set.add(entry.getValue());										// add the vehicle to the result set
+				}
+			}
+		}
+		if(arg1 != null){ // select all vehicles according the indicated type
+			for(Map.Entry<String, VehicleReader_> entry: this.utility.v_map.entrySet()){ // for each vehicle
+				if(entry.getValue().getType().toString().compareTo(arg1.toString()) == 0){	// if the type is the specified one
+					result_set.add(entry.getValue());										// add the vehicle to the result set
+				}
+			}
+		}
+		if(arg2 != null){ // select all vehicles according the indicated state
+			for(Map.Entry<String, VehicleReader_> entry: this.utility.v_map.entrySet()){ // for each vehicle
+				if(entry.getValue().getState().toString().compareTo(arg2.toString()) == 0){	// if the type is the specified one
+					result_set.add(entry.getValue());										// add the vehicle to the result set
+				}
+			}
+		}
+		if(arg0 == null && arg1==null && arg2==null){ // select all vehicles
+			result_set.addAll(this.utility.v_map.values());
+		}
+		return result_set;
 	}
 
 	

@@ -10,8 +10,6 @@
     <roadSegment name="" road=""/>
   </place>
   <place capacity="20" id="002">
-  	<nextPlace>001</nextPlace>
-  	<nextPlace>003</nextPlace>
   	<parkingArea>
   		<service>Restaurant</service>
   		<service>Market</service>
@@ -20,11 +18,17 @@
   <place capacity="20" id="003">
   	<parkingArea>
   		<service>Restaurant</service>
-  		<service>MArket</service>
+  		<service>Market</service>
   	</parkingArea>
   </place>
   <place capacity="20" id="004">
   	<gate>IN</gate>
+  </place>
+  <place capacity="5" id="RS1">
+  	<roadSegment road="RS" name="1"/>
+  </place>
+  <place capacity="5" id="RSS1">
+  	<roadSegment road="RSS" name="1"/>
   </place>
   
   <connection from="001" to="002"/>

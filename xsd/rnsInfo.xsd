@@ -50,13 +50,8 @@
 			<xsd:selector xpath="connection"/>
 			<xsd:field xpath="@to"/>
 		</xsd:keyref>
-		<!-- reference #6 -->
-		<xsd:keyref name="nextPlaceRef" refer="placeKey">
-			<xsd:selector xpath="place/nextPlace"/>
-			<xsd:field xpath="."/>
-		</xsd:keyref>
 		<!-- unique #2 -->
-		<xsd:unique name="road_name_uniqueness"> <!-- IT DOES NOT WORK -->
+		<xsd:unique name="road_name_uniqueness">
 			<xsd:selector xpath="place/roadSegment"/>
 			<xsd:field xpath="@name"/>
 			<xsd:field xpath="@road"/>
@@ -88,24 +83,15 @@
 				</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
-	<xsd:complexType name="commonPlaceType">
-		<xsd:complexContent>
-			<xsd:extension base="identifiedEntityType">
-				<xsd:sequence>
-					<xsd:element name="nextPlace" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
-				</xsd:sequence>
-			<xsd:attribute name="capacity" type="xsd:int" use="required"/>
-			</xsd:extension>
-		</xsd:complexContent>
-	</xsd:complexType>
 	<xsd:complexType name="placeType">
 		<xsd:complexContent>
-			<xsd:extension base="commonPlaceType">
+			<xsd:extension base="identifiedEntityType">
 				<xsd:choice>
 				<xsd:element name="roadSegment" type="roadSegmentType"/>
 				<xsd:element name="parkingArea" type="parkingAreaType"/>
 				<xsd:element name="gate" type="gateType"/>
 			</xsd:choice>
+			<xsd:attribute name="capacity" type="xsd:int" use="required"/>
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>

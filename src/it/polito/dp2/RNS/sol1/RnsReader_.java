@@ -5,9 +5,6 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import it.polito.dp2.RNS.PlaceReader;
-import it.polito.dp2.RNS.sol1.jaxb.PlaceType;
-
 
 public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 	
@@ -22,47 +19,13 @@ public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 	public RnsReader_(it.polito.dp2.RNS.sol1.jaxb.RoadNavigationSystem rns) {
 		this.utility = new UtilityMap(rns);
 		
-		// uncomment to test the program
-		//System.out.println(this.getPlaces(null));
-		System.out.println("--------------------------");
-		
-		System.out.println("rnsPLACES");
-		for(PlaceType p : rns.getPlace()){
-			System.out.println(p.getId());
-			for(String tmp: p.getNextPlace()){
-				System.out.println("\tnh:" + tmp);
-			}
+		// place here some System.out.println to debug the code
+		//System.out.println("size of pa: "+ this.utility.pa_map.size());
+		for(Map.Entry<String, ParkingAreaReader_> entry:this.utility.pa_map.entrySet()){
+			System.out.println(entry.getValue().getId());
 		}
 		
-		
-		System.out.println("PLACES");
-		for(Map.Entry<String, PlaceReader_> p :this.utility.p_map.entrySet()){
-			System.out.print(p.getValue());
-			System.out.println("\tnexthops: " + p.getValue().getNextPlaces().size());
-			for(PlaceReader pp: p.getValue().getNextPlaces()){
-				System.out.println("\t nexthop: " + pp.toString());
-			}
-			
-		}
-		/*System.out.println("GATES");
-		for(Map.Entry<String, GateReader_> g:this.utility.g_map.entrySet()){
-			System.out.println("gate: " + g.getValue().toString() + " - place: " + g.getValue().place.toString());
-			
-		}
-		System.out.println("ROAD SEGMENTS");
-		for(RoadSegmentReader rs:this.getRoadSegments(null)){
-			System.out.println(rs);
-		}
-		System.out.println("PARKING AREAS");
-		for(ParkingAreaReader pa:this.getParkingAreas(null)){
-			System.out.println(pa);
-			System.out.println(pa);
-		}
-		System.out.println("CONNECTIONS");
-		for(ConnectionReader c:this.getConnections()){
-			System.out.println(c);
-		}*/
-		System.out.println("--------------------------");
+		System.out.println(this.getParkingAreas(null));
 	}
 
 	/**
@@ -119,7 +82,7 @@ public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 		}else{ // otherwise add all parking area in the system
 			result_set.addAll(this.utility.pa_map.values());
 		}
-		return null;
+		return result_set;
 	}
 
 	/**

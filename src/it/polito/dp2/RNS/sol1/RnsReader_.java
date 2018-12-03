@@ -18,14 +18,6 @@ public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 	 */
 	public RnsReader_(it.polito.dp2.RNS.sol1.jaxb.RoadNavigationSystem rns) {
 		this.utility = new UtilityMap(rns);
-		
-		// place here some System.out.println to debug the code
-		//System.out.println("size of pa: "+ this.utility.pa_map.size());
-		for(Map.Entry<String, ParkingAreaReader_> entry:this.utility.pa_map.entrySet()){
-			System.out.println(entry.getValue().getId());
-		}
-		
-		System.out.println(this.getParkingAreas(null));
 	}
 
 	/**

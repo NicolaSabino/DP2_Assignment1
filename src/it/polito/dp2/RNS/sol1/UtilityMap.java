@@ -90,14 +90,26 @@ public class UtilityMap {
 		}
 		
 		// NEXT PLACES
-		for(PlaceType p:rns.getPlace()){ // for each place in the system
-			// search all connections where from == p.id
-			for(ConnectionReader_ cr:this.c_list){
-				PlaceReader_ pr = this.p_map.get(p.getId());
-				if(cr.getFrom().getId().compareTo(p.getId()) == 0){
-					PlaceReader_ to = this.p_map.get(cr.getTo().getId());
-					pr.addNextPlace(to);
-				}
+		// we can also calculate next places from the set of connections
+		
+		/*
+		 * 	for(PlaceType p:rns.getPlace()){ // for each place in the system
+		 *		// search all connections where from == p.id
+		 *		for(ConnectionReader_ cr:this.c_list){
+		 *			PlaceReader_ pr = this.p_map.get(p.getId());
+		 *			if(cr.getFrom().getId().compareTo(p.getId()) == 0){
+		 *				PlaceReader_ to = this.p_map.get(cr.getTo().getId());
+		 *				pr.addNextPlace(to);
+		 *			}
+		 *		}
+		 * 	}
+		 */
+		
+		for(PlaceType p : rns.getPlace()){ // for each place
+			PlaceReader_ pp = this.p_map.get(p.getId()); //get the corresponding object in the map
+			for(String identifier: p.getNextPlace()){	// for each next place
+				PlaceReader_ nexthop = this.p_map.get(identifier); // find the corresponding object place in the map 
+				pp.addNextPlace(nexthop); // make the connection
 			}
 		}
 		

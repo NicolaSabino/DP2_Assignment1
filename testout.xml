@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="dp2-student" name="it.polito.dp2.RNS.lab1.tests.RnsTests" skipped="0" tests="5" time="0.228" timestamp="2018-12-03T14:57:36">
+<testsuite errors="0" failures="0" hostname="dp2-student" name="it.polito.dp2.RNS.lab1.tests.RnsTests" skipped="0" tests="5" time="0.194" timestamp="2018-12-03T16:45:46">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="lib.dir" value="/home/dp2/workspace/DP2_2/lib" />
@@ -36,14 +36,14 @@
     <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="exit.code" value="126" />
     <property name="java.class.version" value="52.0" />
-    <property name="it.polito.dp2.RNS.Random.seed" value="1155734" />
+    <property name="it.polito.dp2.RNS.Random.seed" value="1174545" />
     <property name="user.country" value="US" />
     <property name="java.home" value="/usr/lib/jvm/jdk1.8.0_141/jre" />
     <property name="java.vm.info" value="mixed mode" />
     <property name="ant.file.type.RNS-1" value="file" />
     <property name="ant.file" value="/home/dp2/workspace/DP2_2/build.xml" />
     <property name="os.version" value="4.15.0-34-generic" />
-    <property name="temp.dir" value="/home/dp2/workspace/DP2_2/temp1024828552" />
+    <property name="temp.dir" value="/home/dp2/workspace/DP2_2/temp1432781392" />
     <property name="ant.file.RNS-1" value="/home/dp2/workspace/DP2_2/build.xml" />
     <property name="path.separator" value=":" />
     <property name="RnsInfo.RnsReaderFactory" value="it.polito.dp2.RNS.Random.RnsReaderFactoryImpl" />
@@ -61,10 +61,10 @@
     <property name="java.vendor.url" value="http://java.oracle.com/" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner it.polito.dp2.RNS.lab1.tests.RnsTests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/dp2/workspace/DP2_2/testout.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/dp2/workspace/DP2_2/junitvmwatcher6481184275735210276.properties propsfile=/home/dp2/workspace/DP2_2/junit3941305239128408132.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner it.polito.dp2.RNS.lab1.tests.RnsTests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/dp2/workspace/DP2_2/testout.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/home/dp2/workspace/DP2_2/junitvmwatcher8322998297551936684.properties propsfile=/home/dp2/workspace/DP2_2/junit4142951643334538827.properties" />
     <property name="java.class.path" value="/home/dp2/workspace/DP2_2/lib/RNS.jar:/home/dp2/workspace/DP2_2/lib/RNSRandom.jar:/home/dp2/workspace/DP2_2/build:/home/dp2/workspace/DP2_2/lib/lab1.jar:/home/dp2/workspace/DP2_2/lib/junit-4.12.jar:/home/dp2/workspace/DP2_2/lib/hamcrest-core-1.3.jar:/home/dp2/Software/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/home/dp2/Software/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/home/dp2/Software/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/home/dp2/Software/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
-    <property name="TSTAMP" value="1557" />
+    <property name="TSTAMP" value="1745" />
     <property name="test.class" value="it.polito.dp2.RNS.lab1.tests.RnsTests" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="java.vm.specification.version" value="1.8" />
@@ -74,12 +74,12 @@
     <property name="eclipse.pdebuild.home" value="/home/dp2/Software/eclipse/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/.//" />
     <property name="java.io.tmpdir" value="/tmp" />
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
-    <property name="temp.xmlfile" value="/home/dp2/workspace/DP2_2/temp1024828552/out1744913984.xml" />
+    <property name="temp.xmlfile" value="/home/dp2/workspace/DP2_2/temp1432781392/out412728266.xml" />
     <property name="os.arch" value="i386" />
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
     <property name="it.polito.dp2.RNS.Random.testcase" value="0" />
     <property name="java.ext.dirs" value="/usr/lib/jvm/jdk1.8.0_141/jre/lib/ext:/usr/java/packages/lib/ext" />
-    <property name="user.dir" value="/home/dp2/workspace/DP2_2/temp1024828552" />
+    <property name="user.dir" value="/home/dp2/workspace/DP2_2/temp1432781392" />
     <property name="line.separator" value="&#xa;" />
     <property name="java.vm.name" value="Java HotSpot(TM) Server VM" />
     <property name="basedir" value="/home/dp2/workspace/DP2_2" />
@@ -88,101 +88,80 @@
     <property name="source" value="1.8" />
     <property name="schema.dir" value="/home/dp2/workspace/DP2_2/xsd" />
     <property name="file.encoding" value="UTF-8" />
-    <property name="seed" value="1155734" />
-    <property name="it.polito.dp2.RNS.sol1.RnsInfo.file" value="/home/dp2/workspace/DP2_2/temp1024828552/out1744913984.xml" />
+    <property name="seed" value="1174545" />
+    <property name="it.polito.dp2.RNS.sol1.RnsInfo.file" value="/home/dp2/workspace/DP2_2/temp1432781392/out412728266.xml" />
     <property name="java.specification.version" value="1.8" />
     <property name="lab1.location" value="/home/dp2/workspace/DP2_2" />
     <property name="src.dir" value="/home/dp2/workspace/DP2_2/src" />
     <property name="ant.project.invoked-targets" value="runFuncTest.real" />
   </properties>
-  <testcase classname="it.polito.dp2.RNS.lab1.tests.RnsTests" name="testGetGates" time="0.001" />
+  <testcase classname="it.polito.dp2.RNS.lab1.tests.RnsTests" name="testGetGates" time="0.002" />
   <testcase classname="it.polito.dp2.RNS.lab1.tests.RnsTests" name="testGetVehicles" time="0.0" />
-  <testcase classname="it.polito.dp2.RNS.lab1.tests.RnsTests" name="testGetParkingAreas" time="0.001" />
+  <testcase classname="it.polito.dp2.RNS.lab1.tests.RnsTests" name="testGetParkingAreas" time="0.0" />
   <testcase classname="it.polito.dp2.RNS.lab1.tests.RnsTests" name="testGetRoadSegments" time="0.001" />
-  <testcase classname="it.polito.dp2.RNS.lab1.tests.RnsTests" name="testGetPlaces" time="0.003" />
-  <system-out><![CDATA[Random RnsReader: Using seed: 1155734
+  <testcase classname="it.polito.dp2.RNS.lab1.tests.RnsTests" name="testGetPlaces" time="0.002" />
+  <system-out><![CDATA[Random RnsReader: Using seed: 1174545
 Random RnsReader: Test case: 0
+place:Gate1
+place:Gate2
+	nh:SS0-S0
+place:Gate0
+	nh:A0-S0
+	nh:SS1-S0
+place:A0-S0
+	nh:A0-S1
+place:SS0-S1
+	nh:SS0-S2
+place:SS0-S2
+	nh:SS0-S3
+place:A0-S1
+	nh:A0-S2
+place:SS0-S3
+	nh:Gate1
+place:SS1-S0
+	nh:SS1-S1
+place:SS0-S0
+	nh:SS0-S1
+place:SS1-S1
+	nh:Gate2
+place:A0-S2
+	nh:Gate1
 Comparing place Gate0
 Comparing place Gate1
 Comparing place Gate2
-Comparing place PA000
-Comparing place PA001
-Comparing place PA002
-Comparing place PA003
-Comparing place PA004
-Comparing place SP0-S0
-Comparing place SP0-S1
-Comparing place SP0-S2
-Comparing place SP0-S3
-Comparing place SP0-S4
-Comparing place SP0-S5
-Comparing place SP0-S6
-Comparing place SP0-S7
-Comparing place SP0-S8
-Comparing place SP1-S0
-Comparing place SP1-S1
-Comparing place SP1-S2
-Comparing place SP1-S3
-Comparing place SP1-S4
-Comparing place SP1-S5
-Comparing place SP1-S6
-Comparing place SP1-S7
-Comparing place SP1-S8
-Comparing place SP1-S9
+Comparing place A0-S0
+Comparing place A0-S1
+Comparing place A0-S2
+Comparing place SS0-S0
+Comparing place SS0-S1
+Comparing place SS0-S2
+Comparing place SS0-S3
+Comparing place SS1-S0
+Comparing place SS1-S1
+Comparing place A0-S0
+Comparing place A0-S0
+Comparing place A0-S1
+Comparing place A0-S1
+Comparing place A0-S2
+Comparing place A0-S2
 Comparing place Gate0
 Comparing place Gate0
 Comparing place Gate1
 Comparing place Gate1
 Comparing place Gate2
 Comparing place Gate2
-Comparing place PA000
-Comparing place PA000
-Comparing place PA001
-Comparing place PA001
-Comparing place PA002
-Comparing place PA002
-Comparing place PA003
-Comparing place PA003
-Comparing place PA004
-Comparing place PA004
-Comparing place SP0-S0
-Comparing place SP0-S0
-Comparing place SP0-S1
-Comparing place SP0-S1
-Comparing place SP0-S2
-Comparing place SP0-S2
-Comparing place SP0-S3
-Comparing place SP0-S3
-Comparing place SP0-S4
-Comparing place SP0-S4
-Comparing place SP0-S5
-Comparing place SP0-S5
-Comparing place SP0-S6
-Comparing place SP0-S6
-Comparing place SP0-S7
-Comparing place SP0-S7
-Comparing place SP0-S8
-Comparing place SP0-S8
-Comparing place SP1-S0
-Comparing place SP1-S0
-Comparing place SP1-S1
-Comparing place SP1-S1
-Comparing place SP1-S2
-Comparing place SP1-S2
-Comparing place SP1-S3
-Comparing place SP1-S3
-Comparing place SP1-S4
-Comparing place SP1-S4
-Comparing place SP1-S5
-Comparing place SP1-S5
-Comparing place SP1-S6
-Comparing place SP1-S6
-Comparing place SP1-S7
-Comparing place SP1-S7
-Comparing place SP1-S8
-Comparing place SP1-S8
-Comparing place SP1-S9
-Comparing place SP1-S9
+Comparing place SS0-S0
+Comparing place SS0-S0
+Comparing place SS0-S1
+Comparing place SS0-S1
+Comparing place SS0-S2
+Comparing place SS0-S2
+Comparing place SS0-S3
+Comparing place SS0-S3
+Comparing place SS1-S0
+Comparing place SS1-S0
+Comparing place SS1-S1
+Comparing place SS1-S1
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

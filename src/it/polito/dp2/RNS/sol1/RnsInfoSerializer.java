@@ -11,6 +11,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 import it.polito.dp2.RNS.ConnectionReader;
 import it.polito.dp2.RNS.GateReader;
 import it.polito.dp2.RNS.ParkingAreaReader;
+import it.polito.dp2.RNS.PlaceReader;
 import it.polito.dp2.RNS.RnsReader;
 import it.polito.dp2.RNS.RnsReaderException;
 import it.polito.dp2.RNS.RnsReaderFactory;
@@ -97,7 +98,17 @@ public class RnsInfoSerializer {
 			
 			// create a Marshaler and configure it
             this.marshaller = this.context.createMarshaller();
+            // By default JAXB will not format the XML document.
+            // This is done to save space, and not introduce any whitespace 
+            // that may accidentally be interpreted as being significant.  
             this.marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+            // JAXB defaults the encoding to UTF-8. 
+            // You can specify an alternate encoding by setting the Marshaller.JAXB_Encoding 
+            // property on the Marshaller.
+            this.marshaller.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
+            // We can specify the location of the XML schema corresponding to this document 
+            // by setting the Marshaller.JAXB_NO_NAMESPACE_SCHEMA_LOCATION property on the Marshaller.
+            this.marshaller.setProperty(Marshaller.JAXB_NO_NAMESPACE_SCHEMA_LOCATION, "/xsd/rnsInfo.xsd");
             
             // marshaling operation
             this.marshaller.marshal(system, new File(filename));
@@ -159,6 +170,9 @@ public class RnsInfoSerializer {
 			rs.setName(roadSegment.getName());
 			rs.setRoad(roadSegment.getRoadName());
 			temp.setRoadSegment(rs);
+			for(PlaceReader p : roadSegment.getNextPlaces()){
+				temp.getNextPlace().add(p.getId());
+			}
 			// add the temporary container into the list
 			list.add(temp);
 		}
@@ -180,6 +194,9 @@ public class RnsInfoSerializer {
 			Set<String> services = parkingArea.getServices();
 			pa.getService().addAll(services);
 			temp.setParkingArea(pa);
+			for(PlaceReader p : parkingArea.getNextPlaces()){
+				temp.getNextPlace().add(p.getId());
+			}
 			// add the temporary container into the list
 			list.add(temp);
 		}
@@ -215,6 +232,9 @@ public class RnsInfoSerializer {
 			temp.setId(gate.getId());
 			temp.setCapacity(gate.getCapacity());
 			temp.setGate(GateType.valueOf(gate.getType().name()));
+			for(PlaceReader p : gate.getNextPlaces()){
+				temp.getNextPlace().add(p.getId());
+			}
 			// add the temporary container into the list
 			list.add(temp);
 		}

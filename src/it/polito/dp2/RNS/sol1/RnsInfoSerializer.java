@@ -55,10 +55,9 @@ public class RnsInfoSerializer {
 	public static void main(String[] args) {
 		// check if there is the file name
 		if (args.length == 0){
-            //if there are no arguments exit the program
+            //if there are no arguments print an error
 			// we identify this error with ERRORCODE #1
-			System.out.println("No filename");
-            System.exit(1);
+			System.err.println("No filename");
         }
 		System.err.println("The output file is:" + args[0]);
 		RnsInfoSerializer serializer;
@@ -108,7 +107,7 @@ public class RnsInfoSerializer {
             this.marshaller.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
             // We can specify the location of the XML schema corresponding to this document 
             // by setting the Marshaller.JAXB_NO_NAMESPACE_SCHEMA_LOCATION property on the Marshaller.
-            this.marshaller.setProperty(Marshaller.JAXB_NO_NAMESPACE_SCHEMA_LOCATION, "/xsd/rnsInfo.xsd");
+            this.marshaller.setProperty(Marshaller.JAXB_NO_NAMESPACE_SCHEMA_LOCATION, "xsd/rnsInfo.xsd");
             
             // marshaling operation
             this.marshaller.marshal(system, new File(filename));

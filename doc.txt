@@ -1,0 +1,44 @@
+
+roadNavigationSystem
+├── connection
+│   ├── from
+│   └── to
+├── vehicle
+│   ├── id
+│   ├── entryTime
+│   ├── type
+│   ├── state
+│   ├── position
+│   ├── origin
+│   └── destination
+└── commonPlace
+    ├── id
+    ├── nextPlace
+    ├── capacity
+    └── place
+		├── gate
+		├── roadSegment
+		└── parkingArea
+
+	According to the java doc, for a vehicle the unique id is the vehicle plate id, which is a string 
+made only of UPPERCASE ALPHABETIC CHARACTERS AND DIGITS, so i decided to generate a simple type
+`plateId` that is a restriction of the simple type `xsd:string`
+
+	Each Place is an extension of the type `commonPlace` which define all the common elements and
+attributes for places like the capacity, the id  which is a simple string differently from the plate ID
+and a sequence of elements representing the next places reachable from the current one.
+
+	Each parking area can have any number of services, each one characterized only by a name which uniquely
+identifies it, so we can have multiple <service> in the same document but they must be unique inside a
+specific parking area. In order to obtain this behavior i defined the `serviceUnique` constraint
+
+	A road is uniquely identified in the system by its name but there is no a specific function for a road.
+In this design a road is only an attribute for a road segment element. Each road segment is not uniquely
+identified by its name but is identified via a combination of its name and the road name. I define the
+`road_name_uniqueness` reference that ensure that a couple road-road segment represent an unique value.
+
+	`vehicleKey` and `placeKey` ensure the uniqueness and the reference-ability for vehicles and places
+in the system. More precisely places are referred by ref #1 #2 #3 #4 #5 and #6
+
+	Each connection element is a couple of two places, `from` and `to`, uniquely identified by these fields
+with the unique constraint `connection_uniqueness`

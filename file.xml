@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roadNavigationSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/rnsInfo.xsd">
+    <place capacity="1" id="Gate1">
+        <gate>OUT</gate>
+    </place>
+    <place capacity="2" id="Gate2">
+        <nextPlace>A1-S0</nextPlace>
+        <gate>INOUT</gate>
+    </place>
+    <place capacity="1" id="Gate0">
+        <nextPlace>A0-S0</nextPlace>
+        <nextPlace>SP0-S0</nextPlace>
+        <gate>IN</gate>
+    </place>
+    <place capacity="26" id="PA000">
+        <nextPlace>A0-S1</nextPlace>
+        <parkingArea>
+            <service>Toilet</service>
+        </parkingArea>
+    </place>
+    <place capacity="28" id="A0-S0">
+        <nextPlace>A0-S1</nextPlace>
+        <roadSegment name="S0" road="A0"/>
+    </place>
+    <place capacity="18" id="A0-S2">
+        <nextPlace>Gate1</nextPlace>
+        <roadSegment name="S2" road="A0"/>
+    </place>
+    <place capacity="46" id="A0-S1">
+        <nextPlace>PA000</nextPlace>
+        <nextPlace>A0-S2</nextPlace>
+        <roadSegment name="S1" road="A0"/>
+    </place>
+    <place capacity="50" id="SP0-S6">
+        <nextPlace>SP0-S7</nextPlace>
+        <roadSegment name="S6" road="SP0"/>
+    </place>
+    <place capacity="39" id="SP0-S0">
+        <nextPlace>SP0-S1</nextPlace>
+        <roadSegment name="S0" road="SP0"/>
+    </place>
+    <place capacity="41" id="SP0-S2">
+        <nextPlace>SP0-S3</nextPlace>
+        <roadSegment name="S2" road="SP0"/>
+    </place>
+    <place capacity="43" id="SP0-S4">
+        <nextPlace>SP0-S5</nextPlace>
+        <roadSegment name="S4" road="SP0"/>
+    </place>
+    <place capacity="31" id="A1-S2">
+        <nextPlace>Gate1</nextPlace>
+        <roadSegment name="S2" road="A1"/>
+    </place>
+    <place capacity="46" id="SP0-S5">
+        <nextPlace>SP0-S6</nextPlace>
+        <roadSegment name="S5" road="SP0"/>
+    </place>
+    <place capacity="41" id="A1-S0">
+        <nextPlace>A1-S1</nextPlace>
+        <roadSegment name="S0" road="A1"/>
+    </place>
+    <place capacity="49" id="SP0-S7">
+        <nextPlace>Gate2</nextPlace>
+        <roadSegment name="S7" road="SP0"/>
+    </place>
+    <place capacity="43" id="A1-S1">
+        <nextPlace>A1-S2</nextPlace>
+        <roadSegment name="S1" road="A1"/>
+    </place>
+    <place capacity="24" id="SP0-S1">
+        <nextPlace>SP0-S2</nextPlace>
+        <roadSegment name="S1" road="SP0"/>
+    </place>
+    <place capacity="34" id="SP0-S3">
+        <nextPlace>SP0-S4</nextPlace>
+        <roadSegment name="S3" road="SP0"/>
+    </place>
+    <connection from="SP0-S4" to="SP0-S5"/>
+    <connection from="SP0-S0" to="SP0-S1"/>
+    <connection from="SP0-S1" to="SP0-S2"/>
+    <connection from="SP0-S2" to="SP0-S3"/>
+    <connection from="A1-S2" to="Gate1"/>
+    <connection from="Gate0" to="SP0-S0"/>
+    <connection from="A1-S0" to="A1-S1"/>
+    <connection from="Gate0" to="A0-S0"/>
+    <connection from="SP0-S7" to="Gate2"/>
+    <connection from="A0-S1" to="A0-S2"/>
+    <connection from="Gate2" to="A1-S0"/>
+    <connection from="A0-S1" to="PA000"/>
+    <connection from="A1-S1" to="A1-S2"/>
+    <connection from="A0-S0" to="A0-S1"/>
+    <connection from="PA000" to="A0-S1"/>
+    <connection from="A0-S2" to="Gate1"/>
+    <connection from="SP0-S3" to="SP0-S4"/>
+    <connection from="SP0-S5" to="SP0-S6"/>
+    <connection from="SP0-S6" to="SP0-S7"/>
+</roadNavigationSystem>

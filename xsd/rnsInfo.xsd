@@ -75,13 +75,13 @@
 		<xsd:attribute name="to" type="xsd:string" use="required"/>		<!-- key -->
 	</xsd:complexType>
 	
-	<xsd:complexType name="identifiedEntity">
+	<xsd:complexType name="identifiedEntityType">
 		<xsd:attribute name="id" type="xsd:string"/>
 	</xsd:complexType>
 	
 	<xsd:complexType name="plateIdEntity">
 		<xsd:complexContent>
-			<xsd:restriction base="identifiedEntity">
+			<xsd:restriction base="identifiedEntityType">
 				<xsd:attribute name="id" type="plateId"/>
 			</xsd:restriction>
 		</xsd:complexContent>
@@ -98,13 +98,18 @@
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
+	
 	<xsd:complexType name="commonPlaceType">
-		<xsd:sequence>
-			<xsd:element name="nextPlace" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
-		</xsd:sequence>
-		<xsd:attribute name="id" type="xsd:string" use="required"/>
-		<xsd:attribute name="capacity" type="xsd:int" use="required"/>
+		<xsd:complexContent>
+			<xsd:extension base="identifiedEntityType">
+				<xsd:sequence>
+					<xsd:element name="nextPlace" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:sequence>
+				<xsd:attribute name="capacity" type="xsd:int" use="required"/>
+			</xsd:extension>
+		</xsd:complexContent>
 	</xsd:complexType>
+	
 	<xsd:complexType name="placeType">
 		<xsd:complexContent>
 			<xsd:extension base="commonPlaceType">

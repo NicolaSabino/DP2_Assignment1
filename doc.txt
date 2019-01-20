@@ -3,26 +3,35 @@ roadNavigationSystem
 ├── connection
 │   ├── from
 │   └── to
-├── vehicle
-│   ├── id
-│   ├── entryTime
-│   ├── type
-│   ├── state
-│   ├── position
-│   ├── origin
-│   └── destination
-└── commonPlace
-    ├── id
-    ├── nextPlace
-    ├── capacity
-    └── place
-		├── gate
-		├── roadSegment
-		└── parkingArea
+└── identifiedEntity
+   	│└── id
+	├── plateIdEntity
+	│		├─ plateID
+	│		└─ vehicle	
+   	│			├── id
+	│			├── entryTime
+   	│			├── type
+   	│			├── state
+   	│			├── position
+	│			├── origin
+   	│			└── destination
+	└── commonPlace
+		├── id
+		├── nextPlace
+		├── capacity
+		└── place
+			├── gate
+			├── roadSegment
+			│	├── name
+			│	└── road
+			└── parkingArea
+				└── service
 
 	According to the java doc, for a vehicle the unique id is the vehicle plate id, which is a string 
 made only of UPPERCASE ALPHABETIC CHARACTERS AND DIGITS, so i decided to generate a simple type
 `plateId` that is a restriction of the simple type `xsd:string`
+
+	Each vehicle in the system is an extension of the restricted complex type `plateIdEntity`
 
 	Each Place is an extension of the type `commonPlace` which define all the common elements and
 attributes for places like the capacity, the id  which is a simple string differently from the plate ID

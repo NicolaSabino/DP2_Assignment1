@@ -20,13 +20,6 @@ public class RnsReader_ implements it.polito.dp2.RNS.RnsReader {
 	 */
 	public RnsReader_(it.polito.dp2.RNS.sol1.jaxb.RoadNavigationSystem rns) {
 		this.utility = new UtilityMap(rns);
-		
-		for(PlaceType p:rns.getPlace()){
-			System.out.println("place:"+p.getId());
-			for(String id:p.getNextPlace()){
-				System.out.println("\tnh:" + id);
-			}
-		}
 	}
 
 	/**

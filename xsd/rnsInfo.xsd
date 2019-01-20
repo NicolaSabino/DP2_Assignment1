@@ -68,19 +68,35 @@
 			<xsd:field xpath="@to"/>
 		</xsd:unique>
 	</xsd:element>
+	
 	<!-- TYPE DEFINITIONS -->
 	<xsd:complexType name="connectionType">
 		<xsd:attribute name="from" type="xsd:string" use="required"/> 	<!-- key -->
 		<xsd:attribute name="to" type="xsd:string" use="required"/>		<!-- key -->
 	</xsd:complexType>
+	
+	<xsd:complexType name="identifiedEntity">
+		<xsd:attribute name="id" type="xsd:string"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name="plateIdEntity">
+		<xsd:complexContent>
+			<xsd:restriction base="identifiedEntity">
+				<xsd:attribute name="id" type="plateId"/>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
 	<xsd:complexType name="vehicleType">
-		<xsd:attribute name="id" type="plateId" use="required"/>
-		<xsd:attribute name="entryTime" type="xsd:dateTime" use="required"/>
-		<xsd:attribute name="type" type="vType" use="required"/>
-		<xsd:attribute name="state" type="vState" use="required"/>
-		<xsd:attribute name="position" type="xsd:string" use="required"/><!-- ref -->
-		<xsd:attribute name="origin" type="xsd:string" use="required"/><!-- ref -->
-		<xsd:attribute name="destination" type="xsd:string" use="required"/><!-- ref -->
+		<xsd:complexContent>
+			<xsd:extension base="plateIdEntity">
+				<xsd:attribute name="entryTime" type="xsd:dateTime" use="required"/>
+				<xsd:attribute name="type" type="vType" use="required"/>
+				<xsd:attribute name="state" type="vState" use="required"/>
+				<xsd:attribute name="position" type="xsd:string" use="required"/><!-- ref -->
+				<xsd:attribute name="origin" type="xsd:string" use="required"/><!-- ref -->
+				<xsd:attribute name="destination" type="xsd:string" use="required"/><!-- ref -->
+			</xsd:extension>
+		</xsd:complexContent>
 	</xsd:complexType>
 	<xsd:complexType name="commonPlaceType">
 		<xsd:sequence>
@@ -136,4 +152,5 @@
 	    <xsd:enumeration value="INOUT"/>
 	  </xsd:restriction>
 	</xsd:simpleType>
+	
 </xsd:schema>

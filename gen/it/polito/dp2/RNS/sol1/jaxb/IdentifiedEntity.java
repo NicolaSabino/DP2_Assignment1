@@ -11,20 +11,20 @@ package it.polito.dp2.RNS.sol1.jaxb;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for connectionType complex type.
+ * <p>Java class for identifiedEntity complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="connectionType">
+ * &lt;complexType name="identifiedEntity">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;attribute name="from" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="to" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}string" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -33,60 +33,37 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "connectionType")
-public class ConnectionType {
+@XmlType(name = "identifiedEntity")
+@XmlSeeAlso({
+    PlateIdEntity.class
+})
+public class IdentifiedEntity {
 
-    @XmlAttribute(name = "from", required = true)
-    protected String from;
-    @XmlAttribute(name = "to", required = true)
-    protected String to;
+    @XmlAttribute(name = "id")
+    protected String id;
 
     /**
-     * Gets the value of the from property.
+     * Gets the value of the id property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getFrom() {
-        return from;
+    public String getId() {
+        return id;
     }
 
     /**
-     * Sets the value of the from property.
+     * Sets the value of the id property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setFrom(String value) {
-        this.from = value;
-    }
-
-    /**
-     * Gets the value of the to property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTo() {
-        return to;
-    }
-
-    /**
-     * Sets the value of the to property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTo(String value) {
-        this.to = value;
+    public void setId(String value) {
+        this.id = value;
     }
 
 }

@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roadNavigationSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/rnsInfo.xsd">
+    <vehicle entryTime="2018-09-24T08:17:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP4-S3" origin="Gate2" destination="PA012" id="FD180CS"/>
+    <vehicle entryTime="2018-09-24T08:16:00.000+02:00" type="CAR" state="IN_TRANSIT" position="A1-S2" origin="Gate9" destination="PA011" id="XV269GO"/>
+    <vehicle entryTime="2018-09-24T08:16:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SS1-S2" origin="Gate7" destination="Gate8" id="VL248DR"/>
+    <vehicle entryTime="2018-09-24T08:17:00.000+02:00" type="CAR" state="IN_TRANSIT" position="PA005" origin="Gate6" destination="PA005" id="NK219MO"/>
+    <vehicle entryTime="2018-09-24T07:52:00.000+02:00" type="TRUCK" state="PARKED" position="PA012" origin="Gate2" destination="PA012" id="PI181MH"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="A1-S0" origin="Gate9" destination="PA010" id="BU261VO"/>
+    <vehicle entryTime="2018-09-24T08:08:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP2-S4" origin="Gate5" destination="PA004" id="LB199IJ"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SS1-S0" origin="Gate7" destination="PA006" id="OS223HY"/>
+    <vehicle entryTime="2018-09-24T08:16:00.000+02:00" type="CAR" state="IN_TRANSIT" position="PA014" origin="Gate2" destination="PA014" id="PH190XY"/>
+    <vehicle entryTime="2018-09-24T07:26:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="Gate7" origin="Gate5" destination="Gate7" id="CO214CA"/>
+    <vehicle entryTime="2018-09-24T08:14:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP2-S6" origin="Gate5" destination="Gate7" id="PB211KR"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP3-S0" origin="Gate6" destination="PA005" id="EZ218GJ"/>
+    <vehicle entryTime="2018-09-24T08:10:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SP5-S2" origin="Gate2" destination="Gate5" id="AH193SC"/>
+    <vehicle entryTime="2018-09-24T08:16:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SS1-S2" origin="Gate7" destination="PA009" id="XW239NC"/>
+    <vehicle entryTime="2018-09-24T07:24:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="PA009" origin="Gate7" destination="PA009" id="NG245EX"/>
+    <vehicle entryTime="2018-09-24T08:10:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="Gate9" origin="Gate8" destination="Gate9" id="IO260LJ"/>
+    <vehicle entryTime="2018-09-24T08:17:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="A1-S3" origin="Gate9" destination="PA011" id="XR270TV"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP2-S0" origin="Gate5" destination="PA004" id="WN195UN"/>
+    <vehicle entryTime="2018-09-24T08:14:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="Gate5" origin="Gate2" destination="Gate5" id="GE194JO"/>
+    <vehicle entryTime="2018-09-24T08:18:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP3-S1" origin="Gate6" destination="Gate7" id="LP221YV"/>
+    <vehicle entryTime="2018-09-24T07:45:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="A1-S7" origin="Gate9" destination="Gate7" id="PH281CX"/>
+    <vehicle entryTime="2018-09-24T08:12:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SS0-S4" origin="Gate0" destination="Gate4" id="HZ144TW"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SS1-S0" origin="Gate7" destination="PA007" id="AP225NM"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SS1-S0" origin="Gate7" destination="PA008" id="PF229HS"/>
+    <vehicle entryTime="2018-09-24T08:10:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SP1-S5" origin="Gate2" destination="Gate8" id="XI172ZL"/>
+    <vehicle entryTime="2018-09-24T08:12:00.000+02:00" type="CAR" state="PARKED" position="PA002" origin="Gate2" destination="PA002" id="GS158GV"/>
+    <vehicle entryTime="2018-09-24T07:56:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP2-S8" origin="Gate5" destination="PA004" id="LH203BS"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SP4-S0" origin="Gate2" destination="Gate3" id="JF182AV"/>
+    <vehicle entryTime="2018-09-24T08:12:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SP2-S4" origin="Gate5" destination="Gate7" id="XQ209VS"/>
+    <vehicle entryTime="2018-09-24T08:04:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SP1-S8" origin="Gate2" destination="Gate8" id="BN175EB"/>
+    <vehicle entryTime="2018-09-24T08:12:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SS1-S2" origin="Gate7" destination="PA007" id="MJ227PS"/>
+    <vehicle entryTime="2018-09-24T08:11:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SP2-S3" origin="Gate5" destination="PA004" id="VD198ZO"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SP0-S0" origin="Gate1" destination="PA000" id="UX147HP"/>
+    <vehicle entryTime="2018-09-24T08:19:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SP4-S1" origin="Gate2" destination="PA012" id="OO178YJ"/>
+    <vehicle entryTime="2018-09-24T08:04:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP2-S8" origin="Gate5" destination="Gate7" id="DZ213SZ"/>
+    <vehicle entryTime="2018-09-24T08:18:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP2-S2" origin="Gate5" destination="Gate7" id="MS207UK"/>
+    <vehicle entryTime="2018-09-24T08:16:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SP1-S2" origin="Gate2" destination="PA003" id="HE161ZD"/>
+    <vehicle entryTime="2018-09-24T08:18:00.000+02:00" type="CAR" state="IN_TRANSIT" position="A2-S1" origin="Gate5" destination="Gate6" id="FL216AV"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SP5-S0" origin="Gate2" destination="Gate5" id="EN191CT"/>
+    <vehicle entryTime="2018-09-24T08:05:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SP2-S5" origin="Gate5" destination="Gate7" id="JM210OE"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SS1-S0" origin="Gate7" destination="PA009" id="QA237TB"/>
+    <vehicle entryTime="2018-09-24T08:14:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP2-S6" origin="Gate5" destination="PA004" id="HE201BF"/>
+    <vehicle entryTime="2018-09-24T08:17:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SP5-S1" origin="Gate2" destination="PA014" id="XX189EQ"/>
+    <vehicle entryTime="2018-09-24T08:19:00.000+02:00" type="CAR" state="IN_TRANSIT" position="A1-S1" origin="Gate9" destination="PA011" id="FF268LU"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="A0-S0" origin="Gate8" destination="Gate9" id="ZA255RR"/>
+    <vehicle entryTime="2018-09-24T08:00:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="A1-S4" origin="Gate9" destination="PA010" id="DE265NE"/>
+    <vehicle entryTime="2018-09-24T08:13:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP2-S7" origin="Gate5" destination="Gate7" id="ZU212OA"/>
+    <vehicle entryTime="2018-09-24T08:13:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SP1-S7" origin="Gate2" destination="Gate8" id="PP174IX"/>
+    <vehicle entryTime="2018-09-24T08:08:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SS0-S3" origin="Gate0" destination="Gate4" id="KK143CF"/>
+    <vehicle entryTime="2018-09-24T08:14:00.000+02:00" type="CAR" state="IN_TRANSIT" position="A0-S3" origin="Gate8" destination="Gate9" id="AB258RI"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SP3-S0" origin="Gate6" destination="Gate7" id="HW220ON"/>
+    <vehicle entryTime="2018-09-24T08:19:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SS1-S1" origin="Gate7" destination="Gate8" id="KC247RS"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SP1-S0" origin="Gate2" destination="PA001" id="YU152JE"/>
+    <vehicle entryTime="2018-09-24T08:17:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SS1-S3" origin="Gate7" destination="PA009" id="TI240RC"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SP5-S0" origin="Gate2" destination="PA014" id="ZX188EE"/>
+    <vehicle entryTime="2018-09-24T08:17:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP1-S3" origin="Gate2" destination="PA003" id="GH162HD"/>
+    <vehicle entryTime="2018-09-24T08:00:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SS1-S5" origin="Gate7" destination="PA009" id="KO242UT"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP2-S0" origin="Gate5" destination="Gate7" id="AU205NN"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SP1-S0" origin="Gate2" destination="Gate8" id="QO167HQ"/>
+    <vehicle entryTime="2018-09-24T08:02:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SS1-S6" origin="Gate7" destination="PA009" id="VJ243UI"/>
+    <vehicle entryTime="2018-09-24T08:14:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="A1-S2" origin="Gate9" destination="PA010" id="HL263AU"/>
+    <vehicle entryTime="2018-09-24T08:08:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SS0-S6" origin="Gate0" destination="Gate4" id="XK146TC"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SP1-S0" origin="Gate2" destination="PA002" id="RH154RA"/>
+    <vehicle entryTime="2018-09-24T07:52:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SS1-S7" origin="Gate7" destination="Gate8" id="IM253HS"/>
+    <vehicle entryTime="2018-09-24T08:00:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SS1-S5" origin="Gate7" destination="Gate8" id="BA251ST"/>
+    <vehicle entryTime="2018-09-24T07:52:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SS1-S7" origin="Gate7" destination="PA009" id="RT244GO"/>
+    <vehicle entryTime="2018-09-24T08:12:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SP1-S4" origin="Gate2" destination="PA003" id="UN163PJ"/>
+    <vehicle entryTime="2018-09-24T08:14:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SS1-S1" origin="Gate7" destination="PA009" id="ZY238PZ"/>
+    <vehicle entryTime="2018-09-24T07:38:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SP2-S7" origin="Gate5" destination="PA004" id="QK202WR"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SP0-S0" origin="Gate1" destination="Gate4" id="ZM149JE"/>
+    <vehicle entryTime="2018-09-24T08:11:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP1-S3" origin="Gate2" destination="Gate8" id="JO170FE"/>
+    <vehicle entryTime="2018-09-24T08:10:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SP2-S5" origin="Gate5" destination="PA004" id="RR200ML"/>
+    <vehicle entryTime="2018-09-24T08:16:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="A1-S2" origin="Gate9" destination="Gate7" id="QA276OZ"/>
+    <vehicle entryTime="2018-09-24T08:12:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SS1-S4" origin="Gate7" destination="Gate8" id="EI250KC"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SP4-S0" origin="Gate2" destination="PA012" id="TO177TN"/>
+    <vehicle entryTime="2018-09-24T08:08:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SS1-S3" origin="Gate7" destination="Gate8" id="XS249PT"/>
+    <vehicle entryTime="2018-09-24T08:18:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="A0-S2" origin="Gate8" destination="Gate9" id="WU257TT"/>
+    <vehicle entryTime="2018-09-24T08:12:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SS1-S4" origin="Gate7" destination="PA008" id="HR233BB"/>
+    <vehicle entryTime="2018-09-24T08:16:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP4-S2" origin="Gate2" destination="Gate3" id="MO184GO"/>
+    <vehicle entryTime="2018-09-24T08:18:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SP4-S1" origin="Gate2" destination="Gate3" id="ZV183FV"/>
+    <vehicle entryTime="2018-09-24T08:15:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SP1-S5" origin="Gate2" destination="PA003" id="CZ164KS"/>
+    <vehicle entryTime="2018-09-24T08:19:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="A1-S1" origin="Gate9" destination="Gate7" id="JA275SU"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="CAR" state="IN_TRANSIT" position="A2-S0" origin="Gate5" destination="Gate6" id="PW215SM"/>
+    <vehicle entryTime="2018-09-24T08:11:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="PA007" origin="Gate7" destination="PA007" id="QL228LL"/>
+    <vehicle entryTime="2018-09-24T08:12:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SP0-S2" origin="Gate1" destination="Gate4" id="EU151LH"/>
+    <vehicle entryTime="2018-09-24T08:02:00.000+02:00" type="CAR" state="IN_TRANSIT" position="Gate8" origin="Gate2" destination="Gate8" id="SI176EL"/>
+    <vehicle entryTime="2018-09-24T08:16:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="A1-S4" origin="Gate9" destination="Gate7" id="TQ278SW"/>
+    <vehicle entryTime="2018-09-24T08:12:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SP1-S4" origin="Gate2" destination="Gate8" id="BH171WU"/>
+    <vehicle entryTime="2018-09-24T08:19:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP5-S1" origin="Gate2" destination="Gate5" id="CC192RA"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SS0-S0" origin="Gate0" destination="Gate4" id="HE140JC"/>
+    <vehicle entryTime="2018-09-24T08:10:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="A1-S5" origin="Gate9" destination="Gate7" id="OC279VQ"/>
+    <vehicle entryTime="2018-09-24T08:06:00.000+02:00" type="CAR" state="IN_TRANSIT" position="PA008" origin="Gate7" destination="PA008" id="ML236TU"/>
+    <vehicle entryTime="2018-09-24T08:14:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SS1-S2" origin="Gate7" destination="PA008" id="GX231QA"/>
+    <vehicle entryTime="2018-09-24T08:18:00.000+02:00" type="CAR" state="PARKED" position="PA001" origin="Gate2" destination="PA001" id="PP153RI"/>
+    <vehicle entryTime="2018-09-24T08:15:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SS0-S5" origin="Gate0" destination="Gate4" id="PA145QR"/>
+    <vehicle entryTime="2018-09-24T08:16:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="A1-S1" origin="Gate9" destination="PA010" id="ZM262SP"/>
+    <vehicle entryTime="2018-09-24T08:17:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP0-S1" origin="Gate1" destination="Gate4" id="FT150GV"/>
+    <vehicle entryTime="2018-09-24T08:18:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SS0-S2" origin="Gate0" destination="Gate4" id="QE142FX"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="A1-S0" origin="Gate9" destination="PA011" id="OO267ZH"/>
+    <vehicle entryTime="2018-09-24T08:08:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="PA011" origin="Gate9" destination="PA011" id="QH273HF"/>
+    <vehicle entryTime="2018-09-24T08:18:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SP2-S1" origin="Gate5" destination="Gate7" id="NH206ZA"/>
+    <vehicle entryTime="2018-09-24T08:18:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="A0-S1" origin="Gate8" destination="Gate9" id="DE256TV"/>
+    <vehicle entryTime="2018-09-24T08:11:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="A1-S3" origin="Gate9" destination="Gate7" id="JC277EJ"/>
+    <vehicle entryTime="2018-09-24T08:11:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="A1-S3" origin="Gate9" destination="PA010" id="OD264PW"/>
+    <vehicle entryTime="2018-09-24T08:17:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SS1-S3" origin="Gate7" destination="PA008" id="YJ232TK"/>
+    <vehicle entryTime="2018-09-24T08:18:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP1-S1" origin="Gate2" destination="PA003" id="KH160SO"/>
+    <vehicle entryTime="2018-09-24T08:16:00.000+02:00" type="CARAVAN" state="PARKED" position="PA000" origin="Gate1" destination="PA000" id="ZR148CB"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="A1-S0" origin="Gate9" destination="Gate7" id="IQ274WX"/>
+    <vehicle entryTime="2018-09-24T08:00:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="A1-S4" origin="Gate9" destination="PA011" id="OY271NA"/>
+    <vehicle entryTime="2018-09-24T08:02:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SS1-S6" origin="Gate7" destination="PA008" id="AM235GT"/>
+    <vehicle entryTime="2018-09-24T08:11:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SP1-S3" origin="Gate2" destination="PA002" id="CE157KB"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SS1-S0" origin="Gate7" destination="Gate8" id="AE246QT"/>
+    <vehicle entryTime="2018-09-24T08:02:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SS1-S6" origin="Gate7" destination="Gate8" id="UV252ZG"/>
+    <vehicle entryTime="2018-09-24T08:08:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="SP2-S3" origin="Gate5" destination="Gate7" id="UZ208MA"/>
+    <vehicle entryTime="2018-09-24T08:18:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SS1-S1" origin="Gate7" destination="PA008" id="JC230PV"/>
+    <vehicle entryTime="2018-09-24T08:19:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP2-S1" origin="Gate5" destination="PA004" id="RY196UD"/>
+    <vehicle entryTime="2018-09-24T08:08:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="A0-S4" origin="Gate8" destination="Gate9" id="LM259BP"/>
+    <vehicle entryTime="2018-09-24T08:17:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SP1-S1" origin="Gate2" destination="PA002" id="BD155XQ"/>
+    <vehicle entryTime="2018-09-24T08:16:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SP1-S1" origin="Gate2" destination="Gate8" id="QO168IS"/>
+    <vehicle entryTime="2018-09-24T08:00:00.000+02:00" type="TRUCK" state="PARKED" position="PA010" origin="Gate9" destination="PA010" id="VO266PV"/>
+    <vehicle entryTime="2018-09-24T08:17:00.000+02:00" type="TRUCK" state="PARKED" position="PA006" origin="Gate7" destination="PA006" id="ON224UY"/>
+    <vehicle entryTime="2018-09-24T08:18:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SS1-S1" origin="Gate7" destination="PA007" id="HQ226IJ"/>
+    <vehicle entryTime="2018-09-24T08:14:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SP1-S6" origin="Gate2" destination="Gate8" id="CT173TA"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP5-S0" origin="Gate2" destination="PA013" id="PR186QJ"/>
+    <vehicle entryTime="2018-09-24T07:53:00.000+02:00" type="TRUCK" state="PARKED" position="PA004" origin="Gate5" destination="PA004" id="IE204VJ"/>
+    <vehicle entryTime="2018-09-24T08:20:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SP1-S0" origin="Gate2" destination="PA003" id="BQ159EA"/>
+    <vehicle entryTime="2018-09-24T08:16:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="Gate6" origin="Gate5" destination="Gate6" id="GM217YW"/>
+    <vehicle entryTime="2018-09-24T08:14:00.000+02:00" type="CAR" state="IN_TRANSIT" position="A1-S6" origin="Gate9" destination="Gate7" id="IE280YS"/>
+    <vehicle entryTime="2018-09-24T08:06:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SP3-S2" origin="Gate6" destination="Gate7" id="XQ222HT"/>
+    <vehicle entryTime="2018-09-24T08:14:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP2-S2" origin="Gate5" destination="PA004" id="HA197PO"/>
+    <vehicle entryTime="2018-09-24T08:06:00.000+02:00" type="CAR" state="IN_TRANSIT" position="PA003" origin="Gate2" destination="PA003" id="GN166GJ"/>
+    <vehicle entryTime="2018-09-24T08:18:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="PA013" origin="Gate2" destination="PA013" id="OU187ZJ"/>
+    <vehicle entryTime="2018-09-24T08:17:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SS0-S1" origin="Gate0" destination="Gate4" id="BO141FV"/>
+    <vehicle entryTime="2018-09-24T08:16:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SP1-S2" origin="Gate2" destination="Gate8" id="FF169PB"/>
+    <vehicle entryTime="2018-09-24T08:06:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SP1-S2" origin="Gate2" destination="PA002" id="RP156RJ"/>
+    <vehicle entryTime="2018-09-24T08:04:00.000+02:00" type="SHUTTLE" state="IN_TRANSIT" position="SS1-S4" origin="Gate7" destination="PA009" id="SR241SO"/>
+    <vehicle entryTime="2018-09-24T08:02:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SP4-S3" origin="Gate2" destination="Gate3" id="YX185PS"/>
+    <vehicle entryTime="2018-09-24T07:50:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SP1-S6" origin="Gate2" destination="PA003" id="BY165VL"/>
+    <vehicle entryTime="2018-09-24T07:45:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SS1-S5" origin="Gate7" destination="PA008" id="FD234FI"/>
+    <vehicle entryTime="2018-09-24T08:12:00.000+02:00" type="TRUCK" state="IN_TRANSIT" position="SP4-S2" origin="Gate2" destination="PA012" id="WA179QZ"/>
+    <vehicle entryTime="2018-09-24T08:10:00.000+02:00" type="CARAVAN" state="IN_TRANSIT" position="A1-S5" origin="Gate9" destination="PA011" id="NL272NQ"/>
+    <vehicle entryTime="2018-09-24T08:12:00.000+02:00" type="CAR" state="IN_TRANSIT" position="SS1-S8" origin="Gate7" destination="Gate8" id="OU254MJ"/>
+    <place id="Gate1" capacity="1">
+        <nextPlace>SP0-S0</nextPlace>
+        <gate>IN</gate>
+    </place>
+    <place id="Gate5" capacity="2">
+        <nextPlace>SP2-S0</nextPlace>
+        <nextPlace>A2-S0</nextPlace>
+        <gate>INOUT</gate>
+    </place>
+    <place id="Gate6" capacity="2">
+        <nextPlace>SP3-S0</nextPlace>
+        <gate>INOUT</gate>
+    </place>
+    <place id="Gate3" capacity="1">
+        <gate>OUT</gate>
+    </place>
+    <place id="Gate2" capacity="1">
+        <nextPlace>SP1-S0</nextPlace>
+        <nextPlace>SP4-S0</nextPlace>
+        <nextPlace>SP5-S0</nextPlace>
+        <gate>IN</gate>
+    </place>
+    <place id="Gate4" capacity="1">
+        <gate>OUT</gate>
+    </place>
+    <place id="Gate0" capacity="1">
+        <nextPlace>SS0-S0</nextPlace>
+        <gate>IN</gate>
+    </place>
+    <place id="Gate7" capacity="2">
+        <nextPlace>SS1-S0</nextPlace>
+        <gate>INOUT</gate>
+    </place>
+    <place id="Gate8" capacity="2">
+        <nextPlace>A0-S0</nextPlace>
+        <gate>INOUT</gate>
+    </place>
+    <place id="Gate9" capacity="2">
+        <nextPlace>A1-S0</nextPlace>
+        <gate>INOUT</gate>
+    </place>
+    <place id="PA000" capacity="39">
+        <nextPlace>SP0-S0</nextPlace>
+        <parkingArea>
+            <service>Toilet</service>
+            <service>Bar</service>
+        </parkingArea>
+    </place>
+    <place id="PA013" capacity="36">
+        <nextPlace>SP5-S0</nextPlace>
+        <parkingArea>
+            <service>Bar</service>
+        </parkingArea>
+    </place>
+    <place id="PA010" capacity="37">
+        <nextPlace>A1-S4</nextPlace>
+        <parkingArea>
+            <service>Toilet</service>
+        </parkingArea>
+    </place>
+    <place id="PA008" capacity="31">
+        <nextPlace>SS1-S6</nextPlace>
+        <parkingArea>
+            <service>Toilet</service>
+            <service>Bar</service>
+        </parkingArea>
+    </place>
+    <place id="PA009" capacity="28">
+        <nextPlace>SS1-S7</nextPlace>
+        <parkingArea>
+            <service>Restaurant</service>
+            <service>Toilet</service>
+            <service>Bar</service>
+        </parkingArea>
+    </place>
+    <place id="PA003" capacity="33">
+        <nextPlace>SP1-S6</nextPlace>
+        <parkingArea>
+            <service>Restaurant</service>
+            <service>Bar</service>
+        </parkingArea>
+    </place>
+    <place id="PA004" capacity="17">
+        <nextPlace>SP2-S8</nextPlace>
+        <parkingArea>
+            <service>Bar</service>
+        </parkingArea>
+    </place>
+    <place id="PA005" capacity="14">
+        <nextPlace>SP3-S0</nextPlace>
+        <parkingArea>
+            <service>Restaurant</service>
+            <service>Toilet</service>
+            <service>Bar</service>
+        </parkingArea>
+    </place>
+    <place id="PA012" capacity="27">
+        <nextPlace>SP4-S3</nextPlace>
+        <parkingArea>
+            <service>Toilet</service>
+        </parkingArea>
+    </place>
+    <place id="PA002" capacity="37">
+        <nextPlace>SP1-S3</nextPlace>
+        <parkingArea>
+            <service>Restaurant</service>
+            <service>Toilet</service>
+        </parkingArea>
+    </place>
+    <place id="PA011" capacity="43">
+        <nextPlace>A1-S5</nextPlace>
+        <parkingArea>
+            <service>Toilet</service>
+        </parkingArea>
+    </place>
+    <place id="PA007" capacity="37">
+        <nextPlace>SS1-S2</nextPlace>
+        <parkingArea/>
+    </place>
+    <place id="PA014" capacity="27">
+        <nextPlace>SP5-S1</nextPlace>
+        <parkingArea>
+            <service>Restaurant</service>
+            <service>Bar</service>
+        </parkingArea>
+    </place>
+    <place id="PA006" capacity="12">
+        <nextPlace>SS1-S0</nextPlace>
+        <parkingArea>
+            <service>Toilet</service>
+            <service>Bar</service>
+        </parkingArea>
+    </place>
+    <place id="PA001" capacity="29">
+        <nextPlace>SP1-S0</nextPlace>
+        <parkingArea>
+            <service>Restaurant</service>
+        </parkingArea>
+    </place>
+    <place id="SP2-S6" capacity="11">
+        <nextPlace>SP2-S7</nextPlace>
+        <roadSegment name="S6" road="SP2"/>
+    </place>
+    <place id="SS1-S1" capacity="44">
+        <nextPlace>SS1-S0</nextPlace>
+        <nextPlace>SS1-S2</nextPlace>
+        <roadSegment name="S1" road="SS1"/>
+    </place>
+    <place id="SP2-S4" capacity="19">
+        <nextPlace>SP2-S5</nextPlace>
+        <roadSegment name="S4" road="SP2"/>
+    </place>
+    <place id="SP3-S2" capacity="45">
+        <nextPlace>SP3-S1</nextPlace>
+        <nextPlace>Gate7</nextPlace>
+        <roadSegment name="S2" road="SP3"/>
+    </place>
+    <place id="SP1-S1" capacity="11">
+        <nextPlace>SP1-S2</nextPlace>
+        <roadSegment name="S1" road="SP1"/>
+    </place>
+    <place id="SP2-S5" capacity="38">
+        <nextPlace>SP2-S6</nextPlace>
+        <roadSegment name="S5" road="SP2"/>
+    </place>
+    <place id="A0-S2" capacity="22">
+        <nextPlace>A0-S1</nextPlace>
+        <nextPlace>A0-S3</nextPlace>
+        <roadSegment name="S2" road="A0"/>
+    </place>
+    <place id="SS1-S4" capacity="44">
+        <nextPlace>SS1-S3</nextPlace>
+        <nextPlace>SS1-S5</nextPlace>
+        <roadSegment name="S4" road="SS1"/>
+    </place>
+    <place id="SP4-S1" capacity="34">
+        <nextPlace>SP4-S2</nextPlace>
+        <roadSegment name="S1" road="SP4"/>
+    </place>
+    <place id="SS0-S2" capacity="28">
+        <nextPlace>SS0-S3</nextPlace>
+        <roadSegment name="S2" road="SS0"/>
+    </place>
+    <place id="SP3-S1" capacity="30">
+        <nextPlace>SP3-S0</nextPlace>
+        <nextPlace>SP3-S2</nextPlace>
+        <roadSegment name="S1" road="SP3"/>
+    </place>
+    <place id="A1-S5" capacity="19">
+        <nextPlace>PA011</nextPlace>
+        <nextPlace>A1-S6</nextPlace>
+        <roadSegment name="S5" road="A1"/>
+    </place>
+    <place id="SS0-S5" capacity="41">
+        <nextPlace>SS0-S6</nextPlace>
+        <roadSegment name="S5" road="SS0"/>
+    </place>
+    <place id="SP1-S4" capacity="28">
+        <nextPlace>SP1-S5</nextPlace>
+        <roadSegment name="S4" road="SP1"/>
+    </place>
+    <place id="SP0-S2" capacity="34">
+        <nextPlace>Gate4</nextPlace>
+        <roadSegment name="S2" road="SP0"/>
+    </place>
+    <place id="SP2-S7" capacity="14">
+        <nextPlace>SP2-S8</nextPlace>
+        <roadSegment name="S7" road="SP2"/>
+    </place>
+    <place id="A0-S0" capacity="39">
+        <nextPlace>Gate8</nextPlace>
+        <nextPlace>A0-S1</nextPlace>
+        <roadSegment name="S0" road="A0"/>
+    </place>
+    <place id="SP0-S1" capacity="41">
+        <nextPlace>SP0-S2</nextPlace>
+        <roadSegment name="S1" road="SP0"/>
+    </place>
+    <place id="SP3-S0" capacity="31">
+        <nextPlace>Gate6</nextPlace>
+        <nextPlace>PA005</nextPlace>
+        <nextPlace>SP3-S1</nextPlace>
+        <roadSegment name="S0" road="SP3"/>
+    </place>
+    <place id="SP2-S2" capacity="16">
+        <nextPlace>SP2-S3</nextPlace>
+        <roadSegment name="S2" road="SP2"/>
+    </place>
+    <place id="SS1-S0" capacity="16">
+        <nextPlace>Gate7</nextPlace>
+        <nextPlace>PA006</nextPlace>
+        <nextPlace>SS1-S1</nextPlace>
+        <roadSegment name="S0" road="SS1"/>
+    </place>
+    <place id="SP2-S1" capacity="43">
+        <nextPlace>SP2-S2</nextPlace>
+        <roadSegment name="S1" road="SP2"/>
+    </place>
+    <place id="SP5-S0" capacity="16">
+        <nextPlace>PA013</nextPlace>
+        <nextPlace>SP5-S1</nextPlace>
+        <roadSegment name="S0" road="SP5"/>
+    </place>
+    <place id="SP2-S0" capacity="39">
+        <nextPlace>SP2-S1</nextPlace>
+        <roadSegment name="S0" road="SP2"/>
+    </place>
+    <place id="SP2-S8" capacity="24">
+        <nextPlace>PA004</nextPlace>
+        <nextPlace>Gate7</nextPlace>
+        <roadSegment name="S8" road="SP2"/>
+    </place>
+    <place id="A1-S3" capacity="45">
+        <nextPlace>A1-S4</nextPlace>
+        <roadSegment name="S3" road="A1"/>
+    </place>
+    <place id="A1-S0" capacity="28">
+        <nextPlace>A1-S1</nextPlace>
+        <roadSegment name="S0" road="A1"/>
+    </place>
+    <place id="SP1-S0" capacity="50">
+        <nextPlace>PA001</nextPlace>
+        <nextPlace>SP1-S1</nextPlace>
+        <roadSegment name="S0" road="SP1"/>
+    </place>
+    <place id="SP4-S0" capacity="22">
+        <nextPlace>SP4-S1</nextPlace>
+        <roadSegment name="S0" road="SP4"/>
+    </place>
+    <place id="SP4-S2" capacity="31">
+        <nextPlace>SP4-S3</nextPlace>
+        <roadSegment name="S2" road="SP4"/>
+    </place>
+    <place id="SS0-S4" capacity="19">
+        <nextPlace>SS0-S5</nextPlace>
+        <roadSegment name="S4" road="SS0"/>
+    </place>
+    <place id="SP5-S1" capacity="48">
+        <nextPlace>PA014</nextPlace>
+        <nextPlace>SP5-S2</nextPlace>
+        <roadSegment name="S1" road="SP5"/>
+    </place>
+    <place id="SS1-S2" capacity="12">
+        <nextPlace>SS1-S1</nextPlace>
+        <nextPlace>PA007</nextPlace>
+        <nextPlace>SS1-S3</nextPlace>
+        <roadSegment name="S2" road="SS1"/>
+    </place>
+    <place id="SP2-S3" capacity="18">
+        <nextPlace>SP2-S4</nextPlace>
+        <roadSegment name="S3" road="SP2"/>
+    </place>
+    <place id="SP1-S8" capacity="10">
+        <nextPlace>Gate8</nextPlace>
+        <roadSegment name="S8" road="SP1"/>
+    </place>
+    <place id="A0-S4" capacity="19">
+        <nextPlace>A0-S3</nextPlace>
+        <nextPlace>Gate9</nextPlace>
+        <roadSegment name="S4" road="A0"/>
+    </place>
+    <place id="SS0-S0" capacity="48">
+        <nextPlace>SS0-S1</nextPlace>
+        <roadSegment name="S0" road="SS0"/>
+    </place>
+    <place id="A0-S1" capacity="47">
+        <nextPlace>A0-S0</nextPlace>
+        <nextPlace>A0-S2</nextPlace>
+        <roadSegment name="S1" road="A0"/>
+    </place>
+    <place id="SS0-S3" capacity="42">
+        <nextPlace>SS0-S4</nextPlace>
+        <roadSegment name="S3" road="SS0"/>
+    </place>
+    <place id="SS1-S3" capacity="32">
+        <nextPlace>SS1-S2</nextPlace>
+        <nextPlace>SS1-S4</nextPlace>
+        <roadSegment name="S3" road="SS1"/>
+    </place>
+    <place id="SP1-S5" capacity="39">
+        <nextPlace>SP1-S6</nextPlace>
+        <roadSegment name="S5" road="SP1"/>
+    </place>
+    <place id="SP1-S7" capacity="25">
+        <nextPlace>SP1-S8</nextPlace>
+        <roadSegment name="S7" road="SP1"/>
+    </place>
+    <place id="SP4-S3" capacity="39">
+        <nextPlace>PA012</nextPlace>
+        <nextPlace>Gate3</nextPlace>
+        <roadSegment name="S3" road="SP4"/>
+    </place>
+    <place id="A0-S3" capacity="15">
+        <nextPlace>A0-S2</nextPlace>
+        <nextPlace>A0-S4</nextPlace>
+        <roadSegment name="S3" road="A0"/>
+    </place>
+    <place id="A1-S1" capacity="50">
+        <nextPlace>A1-S2</nextPlace>
+        <roadSegment name="S1" road="A1"/>
+    </place>
+    <place id="SP0-S0" capacity="44">
+        <nextPlace>PA000</nextPlace>
+        <nextPlace>SP0-S1</nextPlace>
+        <roadSegment name="S0" road="SP0"/>
+    </place>
+    <place id="A1-S7" capacity="44">
+        <nextPlace>Gate7</nextPlace>
+        <roadSegment name="S7" road="A1"/>
+    </place>
+    <place id="A2-S0" capacity="30">
+        <nextPlace>Gate5</nextPlace>
+        <nextPlace>A2-S1</nextPlace>
+        <roadSegment name="S0" road="A2"/>
+    </place>
+    <place id="A1-S6" capacity="11">
+        <nextPlace>A1-S7</nextPlace>
+        <roadSegment name="S6" road="A1"/>
+    </place>
+    <place id="SP1-S3" capacity="33">
+        <nextPlace>PA002</nextPlace>
+        <nextPlace>SP1-S4</nextPlace>
+        <roadSegment name="S3" road="SP1"/>
+    </place>
+    <place id="SS1-S7" capacity="50">
+        <nextPlace>SS1-S6</nextPlace>
+        <nextPlace>PA009</nextPlace>
+        <nextPlace>SS1-S8</nextPlace>
+        <roadSegment name="S7" road="SS1"/>
+    </place>
+    <place id="SP1-S6" capacity="47">
+        <nextPlace>PA003</nextPlace>
+        <nextPlace>SP1-S7</nextPlace>
+        <roadSegment name="S6" road="SP1"/>
+    </place>
+    <place id="A1-S4" capacity="45">
+        <nextPlace>PA010</nextPlace>
+        <nextPlace>A1-S5</nextPlace>
+        <roadSegment name="S4" road="A1"/>
+    </place>
+    <place id="SP5-S2" capacity="46">
+        <nextPlace>Gate5</nextPlace>
+        <roadSegment name="S2" road="SP5"/>
+    </place>
+    <place id="SS0-S1" capacity="37">
+        <nextPlace>SS0-S2</nextPlace>
+        <roadSegment name="S1" road="SS0"/>
+    </place>
+    <place id="SS0-S6" capacity="43">
+        <nextPlace>Gate4</nextPlace>
+        <roadSegment name="S6" road="SS0"/>
+    </place>
+    <place id="A1-S2" capacity="23">
+        <nextPlace>A1-S3</nextPlace>
+        <roadSegment name="S2" road="A1"/>
+    </place>
+    <place id="SS1-S5" capacity="31">
+        <nextPlace>SS1-S4</nextPlace>
+        <nextPlace>SS1-S6</nextPlace>
+        <roadSegment name="S5" road="SS1"/>
+    </place>
+    <place id="SS1-S6" capacity="36">
+        <nextPlace>SS1-S5</nextPlace>
+        <nextPlace>PA008</nextPlace>
+        <nextPlace>SS1-S7</nextPlace>
+        <roadSegment name="S6" road="SS1"/>
+    </place>
+    <place id="SS1-S8" capacity="40">
+        <nextPlace>SS1-S7</nextPlace>
+        <nextPlace>Gate8</nextPlace>
+        <roadSegment name="S8" road="SS1"/>
+    </place>
+    <place id="A2-S1" capacity="46">
+        <nextPlace>A2-S0</nextPlace>
+        <nextPlace>Gate6</nextPlace>
+        <roadSegment name="S1" road="A2"/>
+    </place>
+    <place id="SP1-S2" capacity="40">
+        <nextPlace>SP1-S3</nextPlace>
+        <roadSegment name="S2" road="SP1"/>
+    </place>
+    <connection from="SP2-S2" to="SP2-S3"/>
+    <connection from="PA005" to="SP3-S0"/>
+    <connection from="A0-S3" to="A0-S4"/>
+    <connection from="A0-S2" to="A0-S3"/>
+    <connection from="SS1-S8" to="SS1-S7"/>
+    <connection from="SP3-S0" to="SP3-S1"/>
+    <connection from="SS1-S2" to="PA007"/>
+    <connection from="SS1-S1" to="SS1-S2"/>
+    <connection from="SP1-S1" to="SP1-S2"/>
+    <connection from="A1-S7" to="Gate7"/>
+    <connection from="PA014" to="SP5-S1"/>
+    <connection from="SP2-S6" to="SP2-S7"/>
+    <connection from="SS1-S0" to="PA006"/>
+    <connection from="SS1-S7" to="SS1-S6"/>
+    <connection from="SP1-S6" to="PA003"/>
+    <connection from="SP3-S0" to="PA005"/>
+    <connection from="Gate0" to="SS0-S0"/>
+    <connection from="SP2-S7" to="SP2-S8"/>
+    <connection from="PA006" to="SS1-S0"/>
+    <connection from="SS1-S4" to="SS1-S5"/>
+    <connection from="PA002" to="SP1-S3"/>
+    <connection from="A0-S0" to="Gate8"/>
+    <connection from="SP2-S1" to="SP2-S2"/>
+    <connection from="Gate2" to="SP1-S0"/>
+    <connection from="Gate7" to="SS1-S0"/>
+    <connection from="SS1-S6" to="SS1-S7"/>
+    <connection from="PA013" to="SP5-S0"/>
+    <connection from="PA010" to="A1-S4"/>
+    <connection from="SP5-S1" to="SP5-S2"/>
+    <connection from="PA001" to="SP1-S0"/>
+    <connection from="A0-S1" to="A0-S0"/>
+    <connection from="SP1-S3" to="PA002"/>
+    <connection from="SS1-S6" to="PA008"/>
+    <connection from="SP0-S1" to="SP0-S2"/>
+    <connection from="A1-S4" to="A1-S5"/>
+    <connection from="SP1-S4" to="SP1-S5"/>
+    <connection from="SS1-S0" to="Gate7"/>
+    <connection from="A0-S1" to="A0-S2"/>
+    <connection from="SS1-S1" to="SS1-S0"/>
+    <connection from="SS0-S4" to="SS0-S5"/>
+    <connection from="SP4-S1" to="SP4-S2"/>
+    <connection from="A1-S5" to="PA011"/>
+    <connection from="SP4-S3" to="Gate3"/>
+    <connection from="SP1-S3" to="SP1-S4"/>
+    <connection from="SP1-S5" to="SP1-S6"/>
+    <connection from="SS1-S5" to="SS1-S6"/>
+    <connection from="A0-S3" to="A0-S2"/>
+    <connection from="SS1-S7" to="PA009"/>
+    <connection from="SS0-S1" to="SS0-S2"/>
+    <connection from="SP1-S8" to="Gate8"/>
+    <connection from="A0-S0" to="A0-S1"/>
+    <connection from="SP2-S4" to="SP2-S5"/>
+    <connection from="A1-S5" to="A1-S6"/>
+    <connection from="SP5-S2" to="Gate5"/>
+    <connection from="SS1-S5" to="SS1-S4"/>
+    <connection from="Gate2" to="SP4-S0"/>
+    <connection from="SS1-S0" to="SS1-S1"/>
+    <connection from="SP2-S8" to="Gate7"/>
+    <connection from="A1-S0" to="A1-S1"/>
+    <connection from="SP2-S8" to="PA004"/>
+    <connection from="SP0-S0" to="SP0-S1"/>
+    <connection from="Gate9" to="A1-S0"/>
+    <connection from="PA004" to="SP2-S8"/>
+    <connection from="SS0-S5" to="SS0-S6"/>
+    <connection from="SS1-S2" to="SS1-S1"/>
+    <connection from="PA007" to="SS1-S2"/>
+    <connection from="A0-S2" to="A0-S1"/>
+    <connection from="SP4-S2" to="SP4-S3"/>
+    <connection from="SS1-S6" to="SS1-S5"/>
+    <connection from="SS0-S2" to="SS0-S3"/>
+    <connection from="Gate1" to="SP0-S0"/>
+    <connection from="SP2-S0" to="SP2-S1"/>
+    <connection from="SP1-S0" to="SP1-S1"/>
+    <connection from="SS1-S8" to="Gate8"/>
+    <connection from="A1-S3" to="A1-S4"/>
+    <connection from="SP5-S0" to="SP5-S1"/>
+    <connection from="SS0-S6" to="Gate4"/>
+    <connection from="A2-S1" to="A2-S0"/>
+    <connection from="SS1-S2" to="SS1-S3"/>
+    <connection from="A2-S1" to="Gate6"/>
+    <connection from="SP5-S0" to="PA013"/>
+    <connection from="SP5-S1" to="PA014"/>
+    <connection from="Gate2" to="SP5-S0"/>
+    <connection from="SP3-S1" to="SP3-S2"/>
+    <connection from="SP4-S3" to="PA012"/>
+    <connection from="SS0-S0" to="SS0-S1"/>
+    <connection from="A1-S4" to="PA010"/>
+    <connection from="A1-S2" to="A1-S3"/>
+    <connection from="A2-S0" to="A2-S1"/>
+    <connection from="A0-S4" to="A0-S3"/>
+    <connection from="SS0-S3" to="SS0-S4"/>
+    <connection from="PA009" to="SS1-S7"/>
+    <connection from="A1-S1" to="A1-S2"/>
+    <connection from="Gate8" to="A0-S0"/>
+    <connection from="SP4-S0" to="SP4-S1"/>
+    <connection from="SP1-S0" to="PA001"/>
+    <connection from="SP2-S3" to="SP2-S4"/>
+    <connection from="SP3-S0" to="Gate6"/>
+    <connection from="A1-S6" to="A1-S7"/>
+    <connection from="SP0-S0" to="PA000"/>
+    <connection from="SP1-S6" to="SP1-S7"/>
+    <connection from="PA003" to="SP1-S6"/>
+    <connection from="SS1-S7" to="SS1-S8"/>
+    <connection from="SP0-S2" to="Gate4"/>
+    <connection from="SS1-S4" to="SS1-S3"/>
+    <connection from="SP3-S2" to="SP3-S1"/>
+    <connection from="A0-S4" to="Gate9"/>
+    <connection from="PA000" to="SP0-S0"/>
+    <connection from="Gate5" to="SP2-S0"/>
+    <connection from="PA008" to="SS1-S6"/>
+    <connection from="PA011" to="A1-S5"/>
+    <connection from="SS1-S3" to="SS1-S2"/>
+    <connection from="SP3-S1" to="SP3-S0"/>
+    <connection from="SP1-S2" to="SP1-S3"/>
+    <connection from="SS1-S3" to="SS1-S4"/>
+    <connection from="SP2-S5" to="SP2-S6"/>
+    <connection from="Gate6" to="SP3-S0"/>
+    <connection from="A2-S0" to="Gate5"/>
+    <connection from="Gate5" to="A2-S0"/>
+    <connection from="PA012" to="SP4-S3"/>
+    <connection from="SP1-S7" to="SP1-S8"/>
+    <connection from="SP3-S2" to="Gate7"/>
+</roadNavigationSystem>
